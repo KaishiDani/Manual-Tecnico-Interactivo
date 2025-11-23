@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Capítulo III</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="encabezado-dual">
+  <div class="bloque-izquierdo">
+    <a href="http://www.upta.edu.ve/" target="_blank">
+      <img src="img/logo-upta.png" alt="Logo UPTA">
+    </a>
+    <div class="texto-izquierdo">
+      <h2>UPT Aragua</h2>
+      <p>"Federico Brito Figueroa"</p>
+    </div>
+  </div>
+
+  <div class="bloque-central">
+    <h1>Manual Técnico Interactivo</h1>
+    <p class="subtitulo">Guía completa para el aprendizaje tecnológico</p>
+  </div>
+
+  <div class="bloque-derecho">
+    <div class="texto-derecho">
+      <h2>U.E.P. "La Trinidad"</h2>
+      <p>Proyecto Educativo Institucional</p>
+    </div>
+    <img src="img/logo-liceo.png" alt="Logo La Trinidad">
+  </div>
+</header>
+
+<nav>
+  <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown">
+          <a href="cap1.html">Capítulo I ▾</a>
+          <ul class="dropdown-menu">
+              <li><a href="cap1.html#sobre">Sobre la Institución</a></li>
+              <li><a href="cap1.html#aspectos">Aspectos Básicos</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          <a href="cap2.html">Capítulo II ▾</a>
+          <ul class="dropdown-menu">
+              <li><a href="cap2.html#hardware">Hardware</a></li>
+              <li><a href="cap2.html#como">¿Cómo hacerlo?</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          <a href="cap3.html">Capítulo III ▾</a>
+          <ul class="dropdown-menu">
+              <li><a href="cap3.html#software">Software</a></li>
+              <li><a href="cap3.html#como2">¿Cómo hacerlo?</a></li>
+          </ul>
+      </li>
+      <li><a href="conclusion.html">Conclusión</a></li>
+      <li><a href="glosario.html">Glosario</a></li>
+      <li><a href="creditos.html">Créditos</a></li>
+  </ul>
+</nav>
+
+<section id="software" class="intro-section">
+  <h2>Software</h2>
+  <p>El software comprende los programas y sistemas que permiten que el hardware funcione correctamente. En este capítulo aprenderás cómo instalar, configurar y mantener las herramientas esenciales para el funcionamiento del sistema.</p>
+</section>
+
+<section class="seccion">
+  <h2>Tipos de Software</h2>
+  <ul>
+    <li>Software básico</li>
+    <li>Sistemas internos</li>
+    <li>Software de gestión y almacenamiento</li>
+  </ul>
+</section>
+
+<section class="seccion">
+  <h2>Recomendaciones Generales</h2>
+  <ul>
+    <li>Descargar software únicamente de fuentes confiables.</li>
+    <li>Mantener actualizaciones automáticas activadas.</li>
+    <li>Evitar instalar programas desconocidos.</li>
+    <li>Crear puntos de restauración antes de cambios grandes.</li>
+  </ul>
+</section>
+
+<section id="como2" class="intro-section">
+  <h2>¿Cómo hacerlo?</h2>
+  <p>A continuación se presentan guías paso a paso para el mantenimiento, instalación y configuración de los principales tipos de software.</p>
+</section>
+
+<div class="tabs-container">
+  <div class="tabs-menu">
+      <button class="tab-button active" onclick="openTab('softwareBasico', this)">Software Básico</button>
+      <button class="tab-button" onclick="openTab('sistemasInternos', this)">Sistemas Internos</button>
+      <button class="tab-button" onclick="openTab('gestion', this)">Gestión y Almacenamiento</button>
+  </div>
+
+  <div class="cards-container">
+
+    <div class="cards-section" id="softwareBasico">
+      <div class="card">
+        <img src="img/navegador.jpg">
+        <h3>Navegadores Web</h3>
+        <p>Configuración y mantenimiento</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <h4>1. Borrar caché</h4><p>Mejora rendimiento.</p>
+          <h4>2. Actualizar</h4>
+          <h4>3. Revisar extensiones</h4>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="img/ofimatica.jpg">
+        <h3>Suite Ofimática</h3>
+        <p>Instalación y actualización</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <h4>1. Instalación</h4>
+          <h4>2. Activación</h4>
+          <h4>3. Actualizaciones automáticas</h4>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="img/antivirus.png">
+        <h3>Antivirus</h3>
+        <p>Instalación y prevención</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <h4>1. Instalar</h4>
+          <h4>2. Escaneo</h4>
+          <h4>3. Protección en tiempo real</h4>
+        </details>
+      </div>
+
+    </div>
+
+    <div class="cards-section" id="sistemasInternos" style="display:none">
+      <div class="card">
+        <img src="img/sistema.jpg">
+        <h3>Sistema Operativo</h3>
+        <p>Actualización y mantenimiento</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <h4>1. Windows Update</h4>
+          <h4>2. Optimizar inicio</h4>
+          <h4>3. Puntos de restauración</h4>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="img/drivers.jpg">
+        <h3>Controladores</h3>
+        <p>Instalación de drivers</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <h4>1. Identificar dispositivos</h4>
+          <h4>2. Descargar drivers correctos</h4>
+          <h4>3. Reiniciar</h4>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="img/bios.jpg">
+        <h3>BIOS / UEFI</h3>
+        <p>Configuración básica</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <h4>1. Acceso</h4>
+          <h4>2. Ajustes principales</h4>
+          <h4>3. Guardar cambios</h4>
+        </details>
+      </div>
+    </div>
+
+    <div class="cards-section" id="gestion" style="display:none">
+      <div class="card">
+        <img src="img/archivos.png">
+        <h3>Gestor de Archivos</h3>
+        <p>Organización del sistema</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <h4>1. Ordenar carpetas</h4>
+          <h4>2. Limpiar archivos temporales</h4>
+          <h4>3. Copias de seguridad</h4>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="img/utilidades.jpg">
+        <h3>Utilidades de Sistema</h3>
+        <p>Diagnóstico y reparación</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <h4>1. SFC</h4>
+          <h4>2. CHKDSK</h4>
+          <h4>3. Monitor de rendimiento</h4>
+        </details>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openTab(tabName, button){
+  document.querySelectorAll('.cards-section').forEach(s => s.style.display = 'none');
+  document.getElementById(tabName).style.display = 'grid';
+  document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+  button.classList.add('active');
+}
+</script>
+
+ <!-- Pie de página -->
+ <footer class="footer-institucional">
+  <div class="footer-column">
+    <h3>U.E.P. La Trinidad</h3>
+    <p>Instituto de Formación con Principios y Valores enmarcados en el amor al prójimo.</p>
+    <p>Calle Dr. Carias, Zona Centro, La Victoria Edo. Aragua.</p>
+    <p>Tel: 0414-5110889</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Sobre el Manual</h3>
+    <p>Manual técnico interactivo diseñado para facilitar el aprendizaje sobre el mantenimiento adecuado de sistemas informáticos.</p>
+    <p>Versión: 1.0 | Año: 2025</p>
+    <p>Tipo: Manual Interactivo Web</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Desarrolladores</h3>
+    <p>Este manual fue diseñado por estudiantes y personal técnico de la institución.</p>
+    <ul>
+      <li>Gianfrancis Peña</li>
+      <li>José Moreno</li>
+      <li>Sarha Tovar</li>
+    </ul>
+  </div>
+</footer>
+
+<!-- SECCIÓN DE REFERENCIAS BIBLIOGRÁFICAS -->
+<div class="footer-referencias">
+  <h3>Referencias Bibliográficas</h3>
+
+  <p><strong>Carrión, J., & Tarrillo, L.</strong> (2025). 
+    <a href="https://www.researchgate.net/publication/393313924_Mantenimiento_Preventivo_en_America_Latina_Un_analisis_comparado_de_principios_metodologias_y_aplicaciones/fulltext/6865575b39c358351206307e/Mantenimiento-Preventivo-en-America-Latina-Un-analisis-comparado-de-principios-metodologias-y-aplicaciones.pdf" target="_blank">
+      Mantenimiento preventivo en América Latina...
+    </a>
+  </p>
+
+  <p><strong>Chávez, J., Díaz, M., Magdaniel, R., & Soto, A.</strong> (2017). 
+    <a href="https://virtual.urbe.edu/tesispub/0107360/cap02.pdf" target="_blank">
+      Programa de mantenimiento para la línea de producción...
+    </a>
+  </p>
+
+  <p><strong>Flores, J. A., & Hernández, M.</strong> (2019). 
+    <a href="https://ri.ufg.edu.sv/jspui/bitstream/11592/6503/1/Manual%20de%20mantenimiento%20preventivo%20y%20correctivo.pdf" target="_blank">
+      Manual de mantenimiento preventivo y correctivo...
+    </a>
+  </p>
+
+  <p><strong>Hernández, P. L., Carro, M., Montes de Oca, J., García, L., & Fernández, S. J.</strong> (2008). 
+    <a href="https://www.redalyc.org/pdf/3291/329127758005.pdf" target="_blank">
+      Optimización del mantenimiento preventivo...
+    </a>
+  </p>
+
+  <p><strong>Loaiza, A.</strong> (2019). 
+    <a href="https://www.redalyc.org/journal/6219/621964639002/html/" target="_blank">
+      Gestión de mantenimiento correctivo...
+    </a>
+  </p>
+
+  <p><strong>Montalvo Revé, G., & González Guevara, M.</strong> (2024). 
+    <a href="https://ve.scielo.org/scielo.php?script=sci_arttext&pid=S2542-29872024000400197" target="_blank">
+      Sistemas de gestión de mantenimiento...
+    </a>
+  </p>
+
+  <p><strong>Veloz Vargas, D. E., & Cevallos Robalino, L. E.</strong> (2022). 
+    <a href="https://dspace.ups.edu.ec/bitstream/123456789/24055/1/UPS-GT004168.pdf" target="_blank">
+      El mantenimiento preventivo como estrategia...
+    </a>
+  </p>
+</div>
+
+<div class="footer-legal">
+  <p>© 2025 U.E.P. La Trinidad. Todos los derechos reservados.</p>
+</div>
+
+</body>
+</html>

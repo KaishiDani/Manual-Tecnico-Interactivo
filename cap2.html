@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Capítulo II</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+     <!-- Encabezado (SIN CAMBIOS) -->
+<header class="encabezado-dual">
+  <div class="bloque-izquierdo">
+    <a href="http://www.upta.edu.ve/" target="_blank">
+      <img src="img/logo-upta.png" alt="Logo UPTA">
+    </a>
+    <div class="texto-izquierdo">
+      <h2>UPT Aragua</h2>
+      <p>"Federico Brito Figueroa"</p>
+    </div>
+  </div>
+
+  <div class="bloque-central">
+    <h1>Manual Técnico Interactivo</h1>
+    <p class="subtitulo">Guía completa para el aprendizaje tecnológico</p>
+  </div>
+
+  <div class="bloque-derecho">
+    <div class="texto-derecho">
+      <h2>U.E.P. "La Trinidad"</h2>
+      <p>Proyecto Educativo Institucional</p>
+    </div>
+    <img src="img/logo-liceo.png" alt="Logo La Trinidad">
+  </div>
+</header>
+
+  <!-- Navegación (SIN CAMBIOS) -->
+  <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <!-- CAPÍTULO I -->
+        <li class="dropdown">
+            <a href="cap1.html">Capítulo I ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cap1.html#sobre">Sobre la Institución</a></li>
+                <li><a href="cap1.html#aspectos">Aspectos Básicos</a></li>
+            </ul>
+        </li>
+
+        <!-- CAPÍTULO II -->
+        <li class="dropdown">
+            <a href="cap2.html">Capítulo II ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cap2.html#hardware">Hardware</a></li>
+                <li><a href="cap2.html#como">¿Cómo hacerlo?</a></li>
+            </ul>
+        </li>
+
+        <!-- CAPÍTULO III -->
+        <li class="dropdown">
+            <a href="cap3.html">Capítulo III ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cap3.html#software">Software</a></li>
+                <li><a href="cap3.html#como2">¿Cómo hacerlo?</a></li>
+            </ul>
+        </li>
+
+        <li><a href="conclusion.html">Conclusión</a></li>
+        <li><a href="glosario.html">Glosario</a></li>
+        <li><a href="creditos.html">Créditos</a></li>
+    </ul>
+</nav>
+ <section id=hardware class="intro-section">
+    <h2>Hardware</h2>
+    <p>El hardware se refiere a los componentes físicos de una computadora o sistema informático. En esta sección se va a repasar en cómo realizar su debido mantenimiento.</p>
+  </section>
+  <section class="seccion">
+  <h2>Herramientas Necesarias</h2>
+  <ul>
+    <li>Destornilladores de precisión</li>
+    <li>Pinzas antiestáticas</li>
+    <li>Brochas suaves o aire comprimido</li>
+    <li>Pasta térmica</li>
+    <li>Multímetro digital</li>
+    <li>Guantes antiestáticos (opcional)</li>
+  </ul>
+</section>
+
+<section class="seccion">
+  <h2>¿Qué se debe tener en cuenta?</h2>
+  <ul>
+    <li>Desconectar el equipo antes de intervenirlo</li>
+    <li>Trabajar en una superficie limpia y libre de estática</li>
+    <li>Identificar correctamente los componentes antes de manipularlos</li>
+    <li>Verificar compatibilidad de piezas antes de reemplazar</li>
+    <li>Documentar los cambios realizados</li>
+  </ul>
+</section>
+
+<section class="seccion">
+  <h2>¿Qué hacer y qué no?</h2>
+  <ul>
+    <li><strong>✔️ Hacer:</strong> Usar herramientas adecuadas, seguir procedimientos seguros, revisar conexiones.</li>
+    <li><strong>❌ No hacer:</strong> Forzar piezas, tocar circuitos sin protección, dejar cables sueltos.</li>
+    <li><strong>✔️ Hacer:</strong> Mantener limpieza interna del equipo regularmente.</li>
+    <li><strong>❌ No hacer:</strong> Usar líquidos corrosivos o abrasivos para limpiar componentes.</li>
+  </ul>
+</section>
+
+<section id=como class="intro-section">
+    <h2>¿Cómo hacerlo?</h2>
+    <p>A continuación, se presentan guías paso a paso para el mantenimiento de los principales componentes de hardware.</p>
+  </section>
+  
+<div class="tabs-container">
+    <div class="tabs-menu">
+        <button class="tab-button active" onclick="openTab('perifericos', this)">Periféricos</button>
+        <button class="tab-button" onclick="openTab('internos', this)">Componentes Internos</button>
+        <button class="tab-button" onclick="openTab('almacenamiento', this)">Almacenamiento y Estructura</button>
+    </div>
+
+    <div class="cards-container">
+
+        <div class="cards-section" id="perifericos">
+            <div class="card">
+                <img src="img/monitor.jpg">
+                <h4>Monitor</h4>
+                <p>Limpieza y verificación de conexiones</p>
+               <details>
+            <summary>Ver guía paso a paso</summary>
+
+            <h4>1. Desconexión y seguridad</h4>
+            <p>Apaga el monitor y desconéctalo de la corriente. Espera al menos 30 segundos antes de manipularlo.</p>
+
+            <h4>2. Limpieza de pantalla</h4>
+            <ul>
+                <li>Usa un paño de microfibra.</li>
+                <li>Aplica limpiador especial para pantallas o alcohol isopropílico al 70%.</li>
+                <li>No rocíes el líquido directamente sobre la pantalla.</li>
+            </ul>
+
+            <h4>3. Limpieza de estructura</h4>
+            <p>Pasa un paño ligeramente húmedo por la base, marco y parte trasera.</p>
+
+            <h4>4. Revisión de conexiones</h4>
+            <ul>
+                <li>Verifica cables VGA, HDMI o DisplayPort.</li>
+                <li>Asegura que no estén doblados o rotos.</li>
+                <li>Comprueba que la fuente de poder funcione correctamente.</li>
+            </ul>
+        </details>
+            </div>
+
+            <div class="card">
+                <img src="img/teclado.jpg">
+                <h4>Teclado</h4>
+                <p>Limpieza profunda y verificación de funcionamiento</p>
+                <details>
+            <summary>Ver guía paso a paso</summary>
+
+            <h4>1. Preparación</h4>
+            <p>Desconecta el teclado y voltéalo suavemente para retirar el polvo suelto.</p>
+
+            <h4>2. Limpieza entre teclas</h4>
+            <ul>
+                <li>Usa aire comprimido para expulsar suciedad.</li>
+                <li>Puedes usar un pincel pequeño o brocha suave.</li>
+            </ul>
+
+            <h4>3. Limpieza profunda</h4>
+            <p>Con un hisopo y alcohol isopropílico, limpia cada tecla individualmente.</p>
+
+            <h4>4. Verificación</h4>
+            <p>Conéctalo y prueba todas las teclas con un probador online.</p>
+        </details>
+            </div>
+
+            <div class="card">
+                <img src="img/mouse.jpg">
+                <h4>Mouse</h4>
+                <p>Limpieza externa, sensor y revisión de botones</p>
+                <details>
+            <summary>Ver guía paso a paso</summary>
+
+            <h4>1. Limpieza externa</h4>
+            <p>Pasa una toalla ligeramente humedecida por la superficie del mouse.</p>
+
+            <h4>2. Limpieza del sensor</h4>
+            <p>Con un hisopo seco o aire comprimido, limpia el sensor inferior para evitar fallas de movimiento.</p>
+
+            <h4>3. Limpieza de la rueda</h4>
+            <p>Mueve la rueda varias veces mientras soplas o aplicas aire comprimido.</p>
+
+            <h4>4. Revisión de botones</h4>
+            <ul>
+                <li>Haz clic repetidamente para verificar que ninguno se quede pegado.</li>
+                <li>En mouse USB, prueba en otra PC si no responde.</li>
+            </ul>
+        </details>
+            </div>
+        </div>
+
+        <div class="cards-section" id="internos" style="display:none">
+            <!-- CPU -->
+<div class="card">
+    <img src="img/cpu.jpg" alt="CPU">
+    <h3>CPU (Procesador)</h3>
+    <p>Mantenimiento térmico y limpieza del disipador.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <h4>1. Apaga y desconecta el equipo</h4>
+        <p>Evita descargas eléctricas o daños a los componentes.</p>
+
+        <h4>2. Retira el disipador</h4>
+        <p>Desatornilla o libera los seguros para poder retirarlo.</p>
+
+        <h4>3. Limpia la pasta térmica vieja</h4>
+        <ul>
+            <li>Usa alcohol isopropílico.</li>
+            <li>Aplica con un paño o hisopo.</li>
+        </ul>
+
+        <h4>4. Coloca nueva pasta térmica</h4>
+        <p>Una gota del tamaño de un chícharo es suficiente.</p>
+
+        <h4>5. Coloca de nuevo el disipador</h4>
+        <p>Aprieta uniformemente para asegurar el contacto.</p>
+    </details>
+</div>
+
+
+<!-- DISCO DURO -->
+<div class="card">
+    <img src="img/hdd.jpg" alt="Disco Duro">
+    <h3>Disco Duro (HDD)</h3>
+    <p>Verificación de sectores, vibraciones y estado SMART.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <h4>1. Retira la unidad del gabinete</h4>
+        <p>Desatornilla suavemente y desconecta cable SATA y energía.</p>
+
+        <h4>2. Limpia conectores</h4>
+        <p>Usa aire comprimido para eliminar polvo.</p>
+
+        <h4>3. Revisa sonidos extraños</h4>
+        <ul>
+            <li>Golpeteos</li>
+            <li>Chirridos</li>
+            <li>Vibraciones excesivas</li>
+        </ul>
+
+        <h4>4. Analiza el SMART</h4>
+        <p>Utiliza CrystalDiskInfo o software similar.</p>
+    </details>
+</div>
+
+
+<!-- PLACA MADRE -->
+<div class="card">
+    <img src="img/motherboard.jpg" alt="Placa Madre">
+    <h3>Placa Madre</h3>
+    <p>Limpieza profunda, inspección de capacitores y puertos.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <h4>1. Desconecta todo cableado</h4>
+        <p>Incluye USB, audio frontal, SATA, ventiladores y energía.</p>
+
+        <h4>2. Limpia con aire comprimido</h4>
+        <p>Realiza pasadas suaves sobre los componentes.</p>
+
+        <h4>3. Revisa capacitores</h4>
+        <ul>
+            <li>Busque abultamientos</li>
+            <li>Fugas</li>
+            <li>Oxidación</li>
+        </ul>
+
+        <h4>4. Verifica ranuras y puertos</h4>
+        <p>Asegúrate de que no tengan polvo ni pines doblados.</p>
+    </details>
+</div>
+
+
+<!-- MEMORIA RAM -->
+<div class="card">
+    <img src="img/ram.jpg" alt="Memoria RAM">
+    <h3>Memoria RAM</h3>
+    <p>Limpieza de contactos y comprobación del módulo.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <h4>1. Retira los módulos</h4>
+        <p>Presiona las pestañas hasta que se liberen.</p>
+
+        <h4>2. Limpia los contactos</h4>
+        <ul>
+            <li>Usa una goma blanca suave</li>
+            <li>Evita tocar los contactos con las manos</li>
+        </ul>
+
+        <h4>3. Limpia las ranuras</h4>
+        <p>Usa aire comprimido únicamente.</p>
+
+        <h4>4. Reinstala los módulos</h4>
+        <p>Escucha el "clic" que confirma la fijación.</p>
+    </details>
+</div>
+
+
+<!-- FUENTE DE PODER -->
+<div class="card">
+    <img src="img/psu.jpg" alt="Fuente de Poder">
+    <h3>Fuente de Poder (PSU)</h3>
+    <p>Revisión de voltajes, limpieza y verificación de cables.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <h4>1. Desconecta totalmente la PC</h4>
+        <p>Una PSU puede mantener voltaje residual.</p>
+
+        <h4>2. Limpia el ventilador</h4>
+        <p>Usa aire comprimido desde el exterior.</p>
+
+        <h4>3. Verifica cables y conectores</h4>
+        <ul>
+            <li>ATX 24 pines</li>
+            <li>CPU 4/8 pines</li>
+            <li>PCIe</li>
+            <li>SATA</li>
+        </ul>
+
+        <h4>4. Revisa olores o manchas</h4>
+        <p>Cualquier olor a quemado indica reemplazo inmediato.</p>
+    </details>
+</div>
+
+
+<!-- CONECTORES -->
+<div class="card">
+    <img src="img/pci.jpg" alt="Conectores">
+    <h3>Conectores</h3>
+    <p>Limpieza y verificación de puertos internos y externos.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <h4>1. Limpia conectores externos</h4>
+        <ul>
+            <li>USB</li>
+            <li>Audio</li>
+            <li>Ethernet</li>
+            <li>HDMI / VGA</li>
+        </ul>
+
+        <h4>2. Limpia conectores internos</h4>
+        <ul>
+            <li>SATA</li>
+            <li>PCIe</li>
+            <li>Fan connectors</li>
+        </ul>
+
+        <h4>3. Revisa que no haya pines doblados</h4>
+        <p>Los pines deformados pueden impedir contacto eléctrico.</p>
+    </details>
+</div>
+
+        </div>
+
+        <div class="cards-section" id="almacenamiento" style="display:none">
+           <!-- GABINETE -->
+<div class="card">
+    <img src="img/case.jpg" alt="Gabinete">
+    <h3>Gabinete (Case)</h3>
+    <p>Limpieza interna, filtros, ventilación y organización de cables.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <h4>1. Retira los paneles laterales</h4>
+        <p>Afloja los tornillos y desliza los paneles con cuidado.</p>
+
+        <h4>2. Limpia el interior</h4>
+        <ul>
+            <li>Usa aire comprimido.</li>
+            <li>Mantén el bote en posición vertical.</li>
+        </ul>
+
+        <h4>3. Limpia ventiladores y rejillas</h4>
+        <p>Utiliza pincel suave y aire comprimido.</p>
+
+        <h4>4. Revisa los filtros antipolvo</h4>
+        <p>La mayoría se quitan fácilmente para lavarse con agua.</p>
+
+        <h4>5. Organiza el cableado</h4>
+        <p>Mejora el flujo de aire y evita bloqueos en los ventiladores.</p>
+    </details>
+</div>
+
+
+<!-- UNIDAD OPTICA CD/DVD -->
+<div class="card">
+    <img src="img/cd.jpg" alt="Unidad CD/DVD">
+    <h3>Unidad de CD/DVD</h3>
+    <p>Limpieza del lente, bandeja y verificación de lectura.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <h4>1. Expulsa la bandeja</h4>
+        <p>Hazlo desde el botón físico para evitar forzar el mecanismo.</p>
+
+        <h4>2. Limpia la bandeja</h4>
+        <p>Pasa un paño ligeramente húmedo por toda la superficie.</p>
+
+        <h4>3. Limpia el lente</h4>
+        <ul>
+            <li>Usa un disco limpiador de lentes</li>
+            <li>O un hisopo con alcohol isopropílico</li>
+        </ul>
+
+        <h4>4. Comprueba el mecanismo</h4>
+        <p>La bandeja debe abrir y cerrar sin trabas.</p>
+
+        <h4>5. Prueba de lectura</h4>
+        <p>Inserta un CD o DVD original para verificar funcionamiento.</p>
+    </details>
+</div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+function openTab(tabName, button){
+    document.querySelectorAll('.cards-section').forEach(s=>s.style.display='none');
+    document.querySelector('#'+tabName).style.display='grid';
+
+    document.querySelectorAll('.tab-button').forEach(b=>b.classList.remove('active'));
+    button.classList.add('active');
+}
+</script>
+
+ <!-- Pie de página -->
+ <footer class="footer-institucional">
+  <div class="footer-column">
+    <h3>U.E.P. La Trinidad</h3>
+    <p>Instituto de Formación con Principios y Valores enmarcados en el amor al prójimo.</p>
+    <p>Calle Dr. Carias, Zona Centro, La Victoria Edo. Aragua.</p>
+    <p>Tel: 0414-5110889</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Sobre el Manual</h3>
+    <p>Manual técnico interactivo diseñado para facilitar el aprendizaje sobre el mantenimiento adecuado de sistemas informáticos.</p>
+    <p>Versión: 1.0 | Año: 2025</p>
+    <p>Tipo: Manual Interactivo Web</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Desarrolladores</h3>
+    <p>Este manual fue diseñado por estudiantes y personal técnico de la institución.</p>
+    <ul>
+      <li>Gianfrancis Peña</li>
+      <li>José Moreno</li>
+      <li>Sarha Tovar</li>
+    </ul>
+  </div>
+</footer>
+
+<!-- SECCIÓN DE REFERENCIAS BIBLIOGRÁFICAS -->
+<div class="footer-referencias">
+  <h3>Referencias Bibliográficas</h3>
+
+  <p><strong>Carrión, J., & Tarrillo, L.</strong> (2025). 
+    <a href="https://www.researchgate.net/publication/393313924_Mantenimiento_Preventivo_en_America_Latina_Un_analisis_comparado_de_principios_metodologias_y_aplicaciones/fulltext/6865575b39c358351206307e/Mantenimiento-Preventivo-en-America-Latina-Un-analisis-comparado-de-principios-metodologias-y-aplicaciones.pdf" target="_blank">
+      Mantenimiento preventivo en América Latina...
+    </a>
+  </p>
+
+  <p><strong>Chávez, J., Díaz, M., Magdaniel, R., & Soto, A.</strong> (2017). 
+    <a href="https://virtual.urbe.edu/tesispub/0107360/cap02.pdf" target="_blank">
+      Programa de mantenimiento para la línea de producción...
+    </a>
+  </p>
+
+  <p><strong>Flores, J. A., & Hernández, M.</strong> (2019). 
+    <a href="https://ri.ufg.edu.sv/jspui/bitstream/11592/6503/1/Manual%20de%20mantenimiento%20preventivo%20y%20correctivo.pdf" target="_blank">
+      Manual de mantenimiento preventivo y correctivo...
+    </a>
+  </p>
+
+  <p><strong>Hernández, P. L., Carro, M., Montes de Oca, J., García, L., & Fernández, S. J.</strong> (2008). 
+    <a href="https://www.redalyc.org/pdf/3291/329127758005.pdf" target="_blank">
+      Optimización del mantenimiento preventivo...
+    </a>
+  </p>
+
+  <p><strong>Loaiza, A.</strong> (2019). 
+    <a href="https://www.redalyc.org/journal/6219/621964639002/html/" target="_blank">
+      Gestión de mantenimiento correctivo...
+    </a>
+  </p>
+
+  <p><strong>Montalvo Revé, G., & González Guevara, M.</strong> (2024). 
+    <a href="https://ve.scielo.org/scielo.php?script=sci_arttext&pid=S2542-29872024000400197" target="_blank">
+      Sistemas de gestión de mantenimiento...
+    </a>
+  </p>
+
+  <p><strong>Veloz Vargas, D. E., & Cevallos Robalino, L. E.</strong> (2022). 
+    <a href="https://dspace.ups.edu.ec/bitstream/123456789/24055/1/UPS-GT004168.pdf" target="_blank">
+      El mantenimiento preventivo como estrategia...
+    </a>
+  </p>
+</div>
+
+<div class="footer-legal">
+  <p>© 2025 U.E.P. La Trinidad. Todos los derechos reservados.</p>
+</div>
+
+</body>
+</html>
