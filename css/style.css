@@ -280,21 +280,6 @@ section p {
   gap: 20px;                  /* Espacio entre imágenes */
   margin: 30px auto;          /* Centrado con margen vertical */
 }
-
-.imagenes-apoyo img {
-  width: 80%;                 /* Escalable y adaptable */
-  max-width: 600px;           /* Límite para pantallas grandes */
-  height: auto;               /* Mantiene proporciones */
-  border-radius: 10px;        /* Bordes suavizados */
-  display: block;             /* Evita espacios fantasmas */
-  margin: 1rem auto;          /* Centrado individual */
-  transition: transform 0.3s ease; /* Animación suave */
-}
-
-.imagenes-apoyo img:hover {
-  transform: scale(1.03);     /* Zoom sutil al pasar el mouse */
-}
-
 /* Sección de introducción */
 .intro-section {
   text-align: center;
@@ -440,6 +425,7 @@ nav ul {
 /* Estilos para las imágenes del liceo */
 .fotos-liceo {
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   gap: 20px; /* Espacio entre las fotos */
@@ -811,4 +797,5 @@ details ul {
     .card {
         width: 90%;
     }
+
 }
