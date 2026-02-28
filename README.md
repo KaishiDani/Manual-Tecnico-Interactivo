@@ -27,3 +27,6 @@ La magia del conocimiento se multiplica cuando se comparte, especialmente entre 
 
 
 (sip, esto fue escrito por IA, porque si fuera sido por mí, estaríamos teniendo una conversación muy diferente)
+
+EDIT (28/02/2026):
+17416-24-8251815-12-22121123-10171274821-2124-912-181221416
