@@ -1,0 +1,459 @@
+/* =====================================================
+   1. RESET Y CONFIGURACIÓN GLOBAL
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 1.6;
+}
+
+img {
+  pointer-events: auto;
+}
+
+
+/* =====================================================
+   2. ENCABEZADO INSTITUCIONAL
+===================================================== */
+header {
+  background-color: #0A207B;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.encabezado-dual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0A207B;
+  color: white;
+  padding: 20px 30px;
+  flex-wrap: wrap;
+}
+
+.bloque-izquierdo,
+.bloque-derecho {
+  display: flex;
+  position: relative;
+  left: 20px;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.bloque-central {
+  flex: 2;
+  text-align: center;
+  min-width: 300px;
+}
+
+.bloque-central h1 {
+  font-size: 2.8rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+.encabezado-dual img {
+  height: 60px;
+  width: auto;
+}
+
+.texto-izquierdo h2,
+.texto-derecho h2 {
+  font-size: 1.2rem;
+}
+
+.texto-izquierdo p,
+.texto-derecho p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+
+/* =====================================================
+   3. NAVEGACIÓN PRINCIPAL
+===================================================== */
+nav {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0A207B;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3B82F6;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 10px 0;
+  z-index: 200;
+}
+
+.dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+  color: #0A207B;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* =====================================================
+   4. SECCIONES GENERALES
+===================================================== */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #0A207B;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+.intro-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.intro-section h2 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #0A207B;
+  font-weight: bold;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
+/* =====================================================
+   5. TARJETAS Y PANELES
+===================================================== */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.panel-dark {
+  background-color: #e3edff;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 6px solid #0A207B;
+  width: 80%;
+  margin: 30px auto;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.panel-dark h2 {
+  font-size: 2rem;
+}
+
+.card-accent {
+  background-color: #E6F0FF;
+  border-left: 6px solid #0A207B;
+  padding: 20px;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+
+/* =====================================================
+   6. IMÁGENES Y CONTENEDORES VISUALES
+===================================================== */
+.imagenes-apoyo,
+.fotos-liceo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 30px auto;
+}
+
+.imagenes-apoyo img,
+.fotos-liceo img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.imagenes-apoyo img:hover,
+.fotos-liceo img:hover {
+  transform: scale(1.03);
+}
+
+
+/* =====================================================
+   7. COMPONENTES INTERACTIVOS
+===================================================== */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease;
+}
+
+.accordion-content.active {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.toggle {
+  background-color: #0A207B;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.guia {
+  display: none;
+  margin-top: 15px;
+  text-align: left;
+  background-color: #acbfff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ==============================
+   BUSCADOR GLOSARIO
+============================== */
+.buscador-glosario {
+  text-align: center;
+  margin: 30px auto;
+}
+
+#searchInput {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid #0A207B;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+#searchInput:focus {
+  box-shadow: 0 0 8px rgba(10,32,123,0.3);
+}
+
+.buscador-glosario button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0A207B;
+  color: white;
+  cursor: pointer;
+}
+
+.buscador-glosario button:hover {
+  background-color: #3B82F6;
+}
+
+#contadorResultados {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0A207B;
+}
+
+.resaltado {
+  background-color: yellow;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.seccion {
+  transition: opacity 0.3s ease;
+}
+
+/* =====================================================
+  CONTENEDORES GLOSARIO (ESTILO INSTITUCIONAL)
+====================================================== */
+
+.contenedor-glosario {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: 40px auto;   /* 🔥 centrado real */
+  padding: 0 20px;
+}
+
+.seccion {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-left: 6px solid #0A207B;
+}
+
+.seccion:hover {
+  transform: translateY(-4px);
+}
+
+.seccion summary {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0A207B;
+  cursor: pointer;
+  list-style: none;
+}
+
+.seccion[open] {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.seccion ul {
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+.seccion li {
+  margin-bottom: 8px;
+}
+
+/* =====================================================
+   8. PIE DE PÁGINA
+===================================================== */
+.footer-institucional {
+  background-color: #002b80;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-legal {
+  background-color: #001a4d;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.footer-referencias {
+  background-color: #0b1f64;
+  padding: 30px 40px;
+  font-size: 0.9rem;
+}
+
+
+/* =====================================================
+   9. RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+
+  .encabezado-dual {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .footer-institucional {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .contenedor-glosario {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor-glosario {
+    grid-template-columns: 1fr;
+  }
+}
