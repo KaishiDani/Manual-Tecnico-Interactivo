@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créditos - Manual Técnico Interactivo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Estilos locales para la página de créditos */
+    .credits-container{max-width:1200px;margin:40px auto;padding:0 20px;}
+    .credits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}
+    .credit-card{background:#fff;border-radius:12px;padding:28px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.04);transition:transform .25s ease}
+    .credit-card:hover{transform:translateY(-5px)}
+
+    .photo{width:160px;height:160px;border-radius:50%;overflow:hidden;margin:0 auto 18px;}
+    .photo img{width:100%;height:100%;object-fit:cover;}
+    .photo.jose{background-image:url('img/jose.png');}
+    .photo.sarha{background-image:url('img/sarha.png');}
+    .photo.gian{background-image:url('img/gian.png');background-size:cover;background-repeat:no-repeat;}
+    .photo.jose{background-position:12% 50%}
+    .photo.sarha{background-position:50% 50%}
+    .photo.gian{background-position:88% 50%}
+    .name{font-size:1.45rem;font-weight:700;margin:8px 0 6px}
+    .contact{font-size:0.95rem;color:#222;margin:6px 0}
+    .quote{font-size:0.92rem;color:#333;margin-top:12px;line-height:1.4;border-top:1px dashed rgba(0,0,0,0.06);padding-top:12px}
+
+    /* Responsive */
+    @media(max-width:900px){.credits-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:600px){.credits-grid{grid-template-columns:1fr}.photo{width:140px;height:140px}}
+  </style>
+</head>
+<body>
+
+<!-- Encabezado (SIN CAMBIOS) -->
+<div id="header"></div>
+
+<main class="credits-container">
+  <section class="intro-section">
+    <h2>Sobre el Equipo de Desarrolladores</h2>
+    <p>Este manual técnico interactivo ha sido desarrollado por un equipo dedicado de estudiantes de la UPTA Federico Brito Figueroa, bajo la supervisión y guía de nuestros profesores. Agradecemos a todos los que contribuyeron con su conocimiento, tiempo y esfuerzo para hacer posible este proyecto.</p>
+  </section>
+  <div class="credits-grid">
+    <!-- José Moreno -->
+    <article class="credit-card">
+      <div class="photo"><img src="img/alejandro.png" alt="Foto de José"></div>
+      <div class="name">José Alejandro Moreno Zambrano</div>
+      <div class="contact">Correo: <a href="mailto:morenojoseza@gmail.com">morenojoseza@gmail.com</a></div>
+      <div class="contact">Teléfono: <a href="tel:+584243673222">+58 424-3673222</a></div>
+      <div class="quote">Bachiller, cursante del trayecto I del PNF en Informática de la UPTA Federico Brito Figueroa. "Pocas cosas llaman mi atención, letras, ingenios y juegos. Si la curiosidad llega, es el momento perfecto para aprender algo nuevo."</div>
+    </article>
+
+    <!-- Sarha Tovar -->
+    <article class="credit-card">
+      <div class="photo"><img src="img/sarha.png" alt="Foto de Sarha"></div>
+      <div class="name">Sarha Carolina Tovar Mosqueda</div>
+      <div class="contact">Correo: <a href="mailto:tovarsarcha46@gmail.com">tovarsarcha46@gmail.com</a></div>
+      <div class="contact">Teléfono: <a href="tel:+584125328285">+58 412-5328285</a></div>
+      <div class="quote">Bachiller, cursante del trayecto I del PNF en Informática de la UPTA Federico Brito Figueroa. "Yo aprendí que de los errores se aprende, de las experiencias se aprende y todos los días se aprende."</div>
+    </article>
+
+    <!-- Gianfrancis Peña -->
+    <article class="credit-card">
+      <div class="photo"><img src="img/gianfrancis.png" alt="Foto de Gianfrancis"></div>
+      <div class="name">Gianfrancis Daniela Peña Castillo</div>
+      <div class="contact">Correo: <a href="mailto:dani32139407@gmail.com">dani32139407@gmail.com</a></div>
+      <div class="contact">Teléfono: <a href="tel:+584124338460">+58 412-4338460</a></div>
+      <div class="quote">Bachiller, cursante del trayecto I del PNF en Informática de la UPTA Federico Brito Figueroa. "No pude encontrar mi lugar en el mundo, así que decidí construir uno. Línea por línea, código por código."</div>
+    </article>
+  </div>
+</main>
+
+<!-- Pie de página (SIN CAMBIOS) -->
+<div id="footer"></div>
+
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>

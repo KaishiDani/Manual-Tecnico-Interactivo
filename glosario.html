@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario - Manual Técnico Interactivo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<div id="header"></div>
+
+<section class="intro-section">
+  <div class="buscador-glosario">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Buscar término..."
+      onkeyup="filtrarGlosario()"
+    >
+    <button onclick="limpiarBusqueda()">Limpiar</button>
+    <p id="contadorResultados"></p>
+  </div>
+
+  <h2>Glosario de Términos</h2>
+  <p>Este glosario reúne términos esenciales relacionados con el mantenimiento preventivo, correctivo y el funcionamiento general de computadoras y software.</p>
+</section>
+
+<section class="contenedor-glosario">
+
+<!-- A -->
+<details class="seccion">
+  <summary>A</summary>
+  <ul>
+    <li><strong>Actualización:</strong> Proceso de instalar versiones más recientes de software o controladores.</li>
+    <li><strong>Antivirus:</strong> Software diseñado para detectar y eliminar malware.</li>
+    <li><strong>Almacenamiento:</strong> Medio donde se guardan datos de forma permanente.</li>
+    <li><strong>API:</strong> Conjunto de funciones que permite la comunicación entre aplicaciones.</li>
+    <li><strong>Advertencia del Sistema:</strong> Notificación sobre fallas o riesgos en el equipo.</li>
+  </ul>
+</details>
+
+<!-- B -->
+<details class="seccion">
+  <summary>B</summary>
+  <ul>
+    <li><strong>Backup:</strong> Copia de seguridad de datos importantes.</li>
+    <li><strong>BIOS:</strong> Sistema básico de entrada/salida encargado del arranque inicial.</li>
+    <li><strong>BSOD:</strong> "Blue Screen of Death", error crítico del sistema operativo Windows.</li>
+    <li><strong>Bug:</strong> Error o falla en el software.</li>
+    <li><strong>Bandwidth:</strong> Cantidad de datos que pueden transferirse por segundo.</li>
+  </ul>
+</details>
+
+<!-- C -->
+<details class="seccion">
+  <summary>C</summary>
+  <ul>
+    <li><strong>Cache:</strong> Memoria rápida utilizada para acelerar procesos.</li>
+    <li><strong>Comando:</strong> Instrucción que ejecuta una acción en el sistema.</li>
+    <li><strong>Controlador (Driver):</strong> Software que permite la comunicación entre hardware y sistema operativo.</li>
+    <li><strong>CPU Usage:</strong> Porcentaje de uso del procesador.</li>
+    <li><strong>Checksum:</strong> Verificación de integridad de archivos.</li>
+  </ul>
+</details>
+
+<!-- D -->
+<details class="seccion">
+  <summary>D</summary>
+  <ul>
+    <li><strong>Diagnóstico:</strong> Proceso de identificar fallas en el equipo.</li>
+    <li><strong>Defragmentación:</strong> Organización de archivos en el disco para mejorar rendimiento.</li>
+    <li><strong>DNS:</strong> Sistema que traduce nombres de dominio a direcciones IP.</li>
+    <li><strong>Dashboard:</strong> Panel visual de control de aplicaciones.</li>
+    <li><strong>Debugging:</strong> Proceso de depuración de errores en el software.</li>
+  </ul>
+</details>
+
+<!-- E -->
+<details class="seccion">
+  <summary>E</summary>
+  <ul>
+    <li><strong>Error Crítico:</strong> Fallo grave que interrumpe el funcionamiento del sistema.</li>
+    <li><strong>Especificaciones:</strong> Características técnicas del equipo o software.</li>
+    <li><strong>Extensión:</strong> Sufijo que indica el tipo de archivo.</li>
+    <li><strong>Encriptación:</strong> Proceso de proteger datos mediante codificación.</li>
+    <li><strong>Estabilidad:</strong> Grado de buen funcionamiento continuo del sistema.</li>
+  </ul>
+</details>
+
+<!-- F -->
+<details class="seccion">
+  <summary>F</summary>
+  <ul>
+    <li><strong>Firewall:</strong> Sistema que controla el tráfico de red para evitar intrusiones.</li>
+    <li><strong>Firmware:</strong> Software incrustado en dispositivos electrónicos.</li>
+    <li><strong>Formateo:</strong> Proceso de borrar y preparar un disco para su uso.</li>
+    <li><strong>Fragmentación:</strong> División de archivos en partes dispersas del disco.</li>
+    <li><strong>Freeware:</strong> Software gratuito sin costo de uso.</li>
+  </ul>
+</details>
+
+<!-- G -->
+<details class="seccion">
+  <summary>G</summary>
+  <ul>
+    <li><strong>Gestor de Tareas:</strong> Herramienta para supervisar procesos activos.</li>
+    <li><strong>Gateway:</strong> Dispositivo que conecta redes distintas.</li>
+    <li><strong>GPU:</strong> Procesador especializado en gráficos.</li>
+    <li><strong>Gigabyte (GB):</strong> Unidad de medida de almacenamiento.</li>
+    <li><strong>Glitch:</strong> Falla temporal en software o hardware.</li>
+  </ul>
+</details>
+
+<!-- H -->
+<details class="seccion">
+  <summary>H</summary>
+  <ul>
+    <li><strong>Hardware:</strong> Componentes físicos del equipo.</li>
+    <li><strong>HTTP:</strong> Protocolo de transferencia de hipertexto.</li>
+    <li><strong>Hertz (Hz):</strong> Medida de frecuencia del procesador.</li>
+    <li><strong>Host:</strong> Dispositivo que funciona como servidor o nodo.</li>
+    <li><strong>Hotfix:</strong> Actualización rápida para corregir errores críticos.</li>
+  </ul>
+</details>
+
+<!-- I -->
+<details class="seccion">
+  <summary>I</summary>
+  <ul>
+    <li><strong>IP:</strong> Dirección que identifica un dispositivo en la red.</li>
+    <li><strong>Interfaz:</strong> Medio por el cual el usuario interactúa con el sistema.</li>
+    <li><strong>Instalación:</strong> Proceso de agregar software al sistema.</li>
+    <li><strong>Integridad del Sistema:</strong> Estado en el que funciona sin alteraciones ni daños.</li>
+    <li><strong>Icono:</strong> Representación gráfica de una aplicación o función.</li>
+  </ul>
+</details>
+
+<!-- J a Z siguen exactamente el mismo patrón -->
+<!-- (Para no hacer el mensaje absurdamente largo, puedes copiar el mismo formato y reemplazar el contenido como ya lo tienes.) --><!-- J -->
+<details class="seccion">
+  <summary>J</summary>
+  <ul>
+    <li><strong>Java:</strong> Lenguaje de programación utilizado en múltiples plataformas.</li>
+    <li><strong>Jumper:</strong> Pequeño conector usado para configurar hardware.</li>
+    <li><strong>JPEG:</strong> Formato de imagen comprimida.</li>
+    <li><strong>Joystick:</strong> Dispositivo de entrada para videojuegos o simulación.</li>
+    <li><strong>JSON:</strong> Formato ligero para intercambio de datos.</li>
+  </ul>
+</details>
+
+<!-- K -->
+<details class="seccion">
+  <summary>K</summary>
+  <ul>
+    <li><strong>Kernel:</strong> Núcleo del sistema operativo.</li>
+    <li><strong>Keycap:</strong> Cubierta de cada tecla en un teclado.</li>
+    <li><strong>Keyword:</strong> Palabra clave en programación o búsquedas.</li>
+    <li><strong>Keylogger:</strong> Software que registra pulsaciones de teclado.</li>
+    <li><strong>Kilobyte:</strong> Unidad de almacenamiento equivalente a 1024 bytes.</li>
+  </ul>
+</details>
+
+<!-- L -->
+<details class="seccion">
+  <summary>L</summary>
+  <ul>
+    <li><strong>LAN (Local Area Network):</strong> Red de área local.</li>
+    <li><strong>Latency:</strong> Tiempo que tarda un paquete de datos en llegar a su destino.</li>
+    <li><strong>Linux:</strong> Sistema operativo de código abierto.</li>
+    <li><strong>Logic Board:</strong> Placa principal de un dispositivo Apple.</li>
+    <li><strong>Login:</strong> Proceso de autenticación del usuario.</li>
+  </ul>
+</details>
+
+<!-- M -->
+<details class="seccion">
+  <summary>M</summary>
+  <ul>
+    <li><strong>Malware:</strong> Software malicioso diseñado para dañar o infiltrarse en sistemas.</li>
+    <li><strong>Motherboard:</strong> Tarjeta madre donde se conectan todos los componentes internos.</li>
+    <li><strong>Monitor:</strong> Dispositivo de salida que muestra información visual.</li>
+    <li><strong>Megabyte (MB):</strong> Unidad de almacenamiento digital.</li>
+    <li><strong>Modem:</strong> Dispositivo que permite la conexión a Internet.</li>
+  </ul>
+</details>
+
+<!-- N -->
+<details class="seccion">
+  <summary>N</summary>
+  <ul>
+    <li><strong>NAS (Network Attached Storage):</strong> Sistema de almacenamiento conectado a la red.</li>
+    <li><strong>NIC (Network Interface Card):</strong> Tarjeta de red.</li>
+    <li><strong>Notebook:</strong> Computador portátil.</li>
+    <li><strong>NTFS:</strong> Sistema de archivos usado por Windows.</li>
+    <li><strong>Node:</strong> Punto dentro de una red informática.</li>
+  </ul>
+</details>
+
+<!-- O -->
+<details class="seccion">
+  <summary>O</summary>
+  <ul>
+    <li><strong>Overclocking:</strong> Aumentar la velocidad de un componente más allá de su capacidad nominal.</li>
+    <li><strong>OS (Operating System):</strong> Sistema operativo.</li>
+    <li><strong>Output:</strong> Salida de información generada por el sistema.</li>
+    <li><strong>Open Source:</strong> Software de código abierto.</li>
+    <li><strong>OCR (Optical Character Recognition):</strong> Reconocimiento óptico de caracteres.</li>
+  </ul>
+</details>
+
+<!-- P -->
+<details class="seccion">
+  <summary>P</summary>
+  <ul>
+    <li><strong>Procesador:</strong> Unidad encargada de ejecutar instrucciones del sistema.</li>
+    <li><strong>PCI Express:</strong> Interfaz de conexión para tarjetas de expansión.</li>
+    <li><strong>Patch:</strong> Actualización pequeña para corregir errores de software.</li>
+    <li><strong>Power Supply:</strong> Fuente de poder.</li>
+    <li><strong>Proxy:</strong> Servidor intermediario en una red.</li>
+  </ul>
+</details>
+
+<!-- Q -->
+<details class="seccion">
+  <summary>Q</summary>
+  <ul>
+    <li><strong>Query:</strong> Consulta realizada a una base de datos.</li>
+    <li><strong>QoS (Quality of Service):</strong> Gestión de prioridad en redes.</li>
+    <li><strong>QR Code:</strong> Código de respuesta rápida usado para almacenar datos.</li>
+    <li><strong>Queue:</strong> Cola de procesos o tareas en espera.</li>
+    <li><strong>Quick Format:</strong> Formateo rápido de unidades de almacenamiento.</li>
+  </ul>
+</details>
+
+<!-- R -->
+<details class="seccion">
+  <summary>R</summary>
+  <ul>
+    <li><strong>RAM (Random Access Memory):</strong> Memoria de acceso rápido usada por el sistema.</li>
+    <li><strong>Router:</strong> Dispositivo que gestiona tráfico de red.</li>
+    <li><strong>Reboot:</strong> Reiniciar un sistema.</li>
+    <li><strong>Restore Point:</strong> Punto de restauración del sistema.</li>
+    <li><strong>Runtime:</strong> Tiempo en que un programa está en ejecución.</li>
+  </ul>
+</details>
+
+<!-- S -->
+<details class="seccion">
+  <summary>S</summary>
+  <ul>
+    <li><strong>Software:</strong> Conjunto de programas que permiten el funcionamiento del sistema.</li>
+    <li><strong>SSD (Solid State Drive):</strong> Unidad de almacenamiento de estado sólido.</li>
+    <li><strong>Server:</strong> Equipo que provee servicios a otros dispositivos.</li>
+    <li><strong>Script:</strong> Conjunto de instrucciones automatizadas.</li>
+    <li><strong>Startup:</strong> Procesos que se inician junto con el sistema operativo.</li>
+  </ul>
+</details>
+
+<!-- T -->
+<details class="seccion">
+  <summary>T</summary>
+  <ul>
+    <li><strong>Task Manager:</strong> Administrador de tareas del sistema.</li>
+    <li><strong>Terminal:</strong> Interfaz de línea de comandos.</li>
+    <li><strong>Trojan:</strong> Malware que se oculta dentro de software legítimo.</li>
+    <li><strong>Throughput:</strong> Cantidad de datos procesados en un tiempo determinado.</li>
+    <li><strong>Toolkit:</strong> Conjunto de herramientas de software.</li>
+  </ul>
+</details>
+
+<!-- U -->
+<details class="seccion">
+  <summary>U</summary>
+  <ul>
+    <li><strong>USB:</strong> Puerto y estándar de conexión para periféricos.</li>
+    <li><strong>User:</strong> Persona que utiliza un sistema informático.</li>
+    <li><strong>Update:</strong> Actualización de software.</li>
+    <li><strong>Uptime:</strong> Tiempo que un sistema lleva encendido sin interrupción.</li>
+    <li><strong>UI (User Interface):</strong> Interfaz de usuario de un sistema.</li>
+  </ul>
+</details>
+
+<!-- V -->
+<details class="seccion">
+  <summary>V</summary>
+  <ul>
+    <li><strong>Virus:</strong> Software malicioso capaz de replicarse.</li>
+    <li><strong>VPN (Virtual Private Network):</strong> Red privada virtual.</li>
+    <li><strong>VRAM:</strong> Memoria de video utilizada por la tarjeta gráfica.</li>
+    <li><strong>Version:</strong> Identificador de una edición de software.</li>
+    <li><strong>Vulnerability:</strong> Punto débil del sistema o software.</li>
+  </ul>
+</details>
+
+<!-- W -->
+<details class="seccion">
+  <summary>W</summary>
+  <ul>
+    <li><strong>Wi-Fi:</strong> Tecnología de conexión inalámbrica.</li>
+    <li><strong>Windows:</strong> Sistema operativo desarrollado por Microsoft.</li>
+    <li><strong>Workflow:</strong> Flujo de trabajo en procesos digitales.</li>
+    <li><strong>WAN (Wide Area Network):</strong> Red de área amplia.</li>
+    <li><strong>Widget:</strong> Elemento gráfico interactivo de una interfaz.</li>
+  </ul>
+</details>
+
+<!-- X -->
+<details class="seccion">
+  <summary>X</summary>
+  <ul>
+    <li><strong>XML:</strong> Lenguaje de marcado para estructurar datos.</li>
+    <li><strong>XAMPP:</strong> Paquete de herramientas para desarrollo web.</li>
+    <li><strong>X86:</strong> Arquitectura de procesadores.</li>
+    <li><strong>XInput:</strong> API usada para controladores de juegos.</li>
+    <li><strong>Xorg:</strong> Servidor gráfico para sistemas UNIX.</li>
+  </ul>
+</details>
+
+<!-- Y -->
+<details class="seccion">
+  <summary>Y</summary>
+  <ul>
+    <li><strong>Yottabyte:</strong> Unidad de almacenamiento extremadamente grande.</li>
+    <li><strong>YAML:</strong> Lenguaje de serialización de datos.</li>
+    <li><strong>Y-axis:</strong> Eje vertical utilizado en gráficos.</li>
+    <li><strong>Y-Cable:</strong> Cable divisor para dispositivos USB.</li>
+    <li><strong>YouTube:</strong> Plataforma usada frecuentemente para tutoriales técnicos.</li>
+  </ul>
+</details>
+
+<!-- Z -->
+<details class="seccion">
+  <summary>Z</summary>
+  <ul>
+    <li><strong>Zip:</strong> Formato de compresión de archivos.</li>
+    <li><strong>ZIF (Zero Insertion Force):</strong> Tipo de socket para procesadores.</li>
+    <li><strong>Zettabyte:</strong> Unidad de almacenamiento de gran escala.</li>
+    <li><strong>Z-buffer:</strong> Técnica usada en gráficos 3D.</li>
+    <li><strong>Zone File:</strong> Archivo que contiene información DNS.</li>
+  </ul>
+</details>
+
+</section>
+
+<div id="footer"></div>
+
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+<script>
+function filtrarGlosario() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const secciones = document.querySelectorAll(".seccion");
+  const contador = document.getElementById("contadorResultados");
+  let totalResultados = 0;
+
+  secciones.forEach(seccion => {
+    const items = seccion.querySelectorAll("li");
+    let hayCoincidencia = false;
+
+    items.forEach(item => {
+      const textoOriginal = item.textContent;
+      const texto = textoOriginal.toLowerCase();
+
+      item.innerHTML = textoOriginal;
+
+      if (texto.includes(input) && input !== "") {
+        const regex = new RegExp(`(${input})`, "gi");
+        item.innerHTML = textoOriginal.replace(regex, '<span class="resaltado">$1</span>');
+        item.style.display = "list-item";
+        hayCoincidencia = true;
+        totalResultados++;
+      } else if (input === "") {
+        item.style.display = "list-item";
+      } else {
+        item.style.display = "none";
+      }
+    });
+
+    if (input === "") {
+      seccion.removeAttribute("open");
+      seccion.classList.remove("busqueda-activa");
+      seccion.style.display = "block";
+    } else if (hayCoincidencia) {
+      seccion.setAttribute("open", true); // 🔓 abre el contenedor
+      seccion.classList.add("busqueda-activa");
+      seccion.style.display = "block";
+    } else {
+      seccion.removeAttribute("open");
+      seccion.classList.remove("busqueda-activa");
+      seccion.style.display = "none";
+    }
+  });
+
+  contador.textContent = input === "" 
+    ? "" 
+    : totalResultados + " resultado(s) encontrado(s)";
+}
+</script>
+
+<script>
+function limpiarBusqueda() {
+  const input = document.getElementById("searchInput");
+  const secciones = document.querySelectorAll(".seccion");
+  const contador = document.getElementById("contadorResultados");
+
+  input.value = "";
+  contador.textContent = "";
+
+  secciones.forEach(seccion => {
+    const items = seccion.querySelectorAll("li");
+
+    items.forEach(item => {
+      const textoOriginal = item.textContent;
+      item.innerHTML = textoOriginal; // quitar resaltado
+      item.style.display = "list-item"; // mostrar todo
+    });
+
+    seccion.removeAttribute("open"); // cerrar acordeón
+    seccion.classList.remove("busqueda-activa");
+    seccion.style.display = "block"; // mostrar todas las letras
+  });
+}
+</script>
+
+</body>
+</html>

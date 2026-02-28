@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusión - Manual Técnico Interactivo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<!-- Encabezado (SIN CAMBIOS) -->
+<div id="header"></div>
+
+<!-- CONTENIDO DE LA CONCLUSIÓN -->
+<section class="intro-section">
+  <h2>Conclusión</h2>
+  <p>El presente manual técnico interactivo, orientado al mantenimiento preventivo y correctivo de sistemas informáticos, ha permitido comprender los procedimientos esenciales para garantizar el funcionamiento adecuado, seguro y eficiente de cualquier equipo de cómputo. A través del estudio del software, su administración, diagnóstico y recuperación, se ha brindado una guía clara y accesible para estudiantes y usuarios que buscan desarrollar competencias técnicas fundamentales.</p>
+</section>
+
+<section class="seccion">
+  <h2>Valor del Mantenimiento Preventivo y Correctivo</h2>
+  <p>El mantenimiento preventivo se centra en evitar futuras fallas mediante acciones programadas que prolongan la vida útil del sistema, optimizan su rendimiento y reducen riesgos. Por su parte, el mantenimiento correctivo permite identificar, diagnosticar y solventar problemas una vez que han ocurrido, asegurando la restauración del funcionamiento normal del equipo. Ambos procesos son complementarios y necesarios, especialmente en entornos educativos y laborales donde la continuidad operativa es fundamental.</p>
+</section>
+
+<section class="seccion">
+  <h2>Aprendizajes Relevantes</h2>
+  <ul>
+    <li>Importancia de mantener el software actualizado para evitar vulnerabilidades.</li>
+    <li>Aplicación de técnicas básicas de diagnóstico ante fallas del sistema.</li>
+    <li>Reconocimiento de herramientas útiles para la reparación y optimización.</li>
+    <li>Diferencias entre mantenimiento preventivo y correctivo, y cuándo aplicar cada uno.</li>
+    <li>Comprensión del rol del usuario en la preservación del buen estado del software.</li>
+  </ul>
+</section>
+
+<section class="seccion">
+  <h2>Recomendaciones</h2>
+  <ul>
+    <li>Realizar análisis periódicos con herramientas de seguridad confiables.</li>
+    <li>Evitar instalar software de dudosa procedencia o sin verificación de integridad.</li>
+    <li>Mantener copias de seguridad actualizadas de los archivos importantes.</li>
+    <li>Programar revisiones mensuales de rendimiento y limpieza digital.</li>
+    <li>Documentar cualquier falla o irregularidad para facilitar su diagnóstico posterior.</li>
+  </ul>
+</section>
+
+<section class="seccion">
+  <h2>Reflexión Final</h2>
+  <p>El mantenimiento preventivo y correctivo del software no solo es una práctica técnica, sino una responsabilidad del usuario moderno. Dominar estos conocimientos garantiza equipos más estables, seguros y eficientes, contribuyendo a un entorno tecnológico confiable tanto en instituciones como en el hogar. Este manual busca servir como referencia indispensable para fortalecer la cultura tecnológica y promover el uso responsable de las herramientas digitales.</p>
+</section>
+
+<!-- Pie de página (SIN CAMBIOS) -->
+<div id="footer"></div>
+
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>

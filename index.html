@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico Interactivo</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+<div id="header"></div>
+
+  <!-- Secciones -->
+  <section id="introduccion" class="intro-section">
+    <h2>Introducción</h2>
+    <p>Te damos la bienvenida al Manual Técnico Interactivo de la U.E.P. "La Trinidad", una herramienta creada para apoyar el mantenimiento de los sistemas informáticos y fortalecer la infraestructura tecnológica de nuestra institución.</p>
+  </section>
+
+  <section class="panel-dark">
+  <div class="panel-header">
+    <h2>🛠️ Justificación</h2>
+  </div>
+  <p>
+    Este manual promueve el mantenimiento preventivo y correctivo como base para fortalecer la operatividad diaria, asegurando un entorno tecnológico estable que potencie el trabajo académico y el acceso a herramientas digitales.
+  </p>
+</section>
+
+<section class="panel-dark">
+  <div class="panel-header">
+    <h2>🎯 Objetivos</h2>
+  </div>
+  <ul>
+    <li>Fortalecer el mantenimiento informático en la institución.</li>
+    <li>Optimizar el uso de herramientas digitales.</li>
+    <li>Promover la autonomía tecnológica en el entorno educativo.</li>
+  </ul>
+</section>
+
+<section class="panel-dark">
+  <div class="panel-header">
+    <h2>📡 Alcances</h2>
+  </div>
+  <p>
+    El manual está dirigido a estudiantes, docentes y personal técnico, abarcando prácticas básicas de mantenimiento, uso responsable de recursos digitales y fortalecimiento de la infraestructura tecnológica escolar.
+  </p>
+</section>
+
+  <!-- Pie de página -->
+<footer id="footer"></footer>
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
