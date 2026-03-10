@@ -1,0 +1,1180 @@
+/* =====================================================
+   ESTILOS INSTITUCIONALES - OPTIMIZADO
+   =====================================================*/
+
+/* =====================================================
+   1. RESET Y CONFIGURACIÓN GLOBAL
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  line-height: 1.6;
+  padding-top: 130px;
+}
+
+img {
+  pointer-events: auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover {
+  color: #6ca4ff;
+  text-decoration: underline;
+}
+
+/* =====================================================
+   2. VARIABLES CSS (Custom Properties)
+===================================================== */
+:root {
+  --bg-color: #ffffff;
+  --link-color: #ffffff;
+  --footer-bg: #002b80;
+  --footer-text: #ffffff;
+  --contact-color: #0A207B;
+  --text-color: #222222;
+  --section-bg: #ffffff;
+  --card-bg: #ffffff;
+  --name-color: #0A207B;
+  --text-main: #000000;
+  --text-muted: #000000;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-border: rgba(0, 0, 0, 0.08);
+}
+
+/* Modo oscuro - Preferencias del sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --section-bg: #121212;
+    --card-bg: #1e1e2d;
+    --name-color: #ffffff;
+    --text-main: #e0e0e0;
+    --text-muted: #b0b0b0;
+    --card-shadow: rgba(0, 0, 0, 0.4);
+    --card-border: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Modo oscuro institucional */
+body.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  --link-color: #ffffff;
+  --contact-link: #ffffff;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --section-bg: #121212;
+}
+
+/* =====================================================
+   3. ENCABEZADO INSTITUCIONAL
+===================================================== */
+header {
+  background-color: #0A207B;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Encabezado dual */
+.encabezado-dual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0A207B;
+  color: white;
+  min-height: 80px;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.bloque-izquierdo,
+.bloque-derecho {
+  display: flex;
+  position: relative;
+  left: 20px;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.bloque-central {
+  flex: 2;
+  text-align: center;
+  min-width: 300px;
+}
+
+.bloque-central h1 {
+  font-size: 2rem;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  margin-top: -10px;
+  opacity: 0.9;
+}
+
+.encabezado-dual img {
+  height: 60px;
+  width: auto;
+}
+
+.texto-izquierdo h2,
+.texto-derecho h2 {
+  font-size: 1.2rem;
+}
+
+.texto-izquierdo p,
+.texto-derecho p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* =====================================================
+   4. NAVEGACIÓN PRINCIPAL
+===================================================== */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0A207B;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3B82F6;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 10px 0;
+  z-index: 200;
+}
+
+.dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+  color: #0A207B;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Botón toggle tema */
+#themeToggle {
+  background: #e7f7f7;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#themeToggle:hover {
+  transform: scale(1.1);
+}
+
+/* =====================================================
+   5. SECCIONES GENERALES
+===================================================== */
+section {
+  max-width: 800px;
+  scroll-margin-top: 150px;
+  margin: 40px auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #0A207B;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+.seccion,
+.intro-section,
+.tabs-container {
+  background-color: transparent;
+}
+
+/* Introducción */
+.intro-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.intro-section h2 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #0A207B;
+  font-weight: bold;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Grid de tipos */
+.tipos-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tipo {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* Video */
+.intro-video {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.intro-video video {
+  width: 720px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.intro-video iframe {
+  width: 700px;
+  height: 395px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* Contenedores en columnas */
+.contenedores-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Tarjetas de información */
+.info-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-left: 4px solid #0A207B;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  border-left: 4px solid #3B82F6;
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #0A207B;
+}
+
+.info-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* =====================================================
+   6. TARJETAS Y PANELES
+===================================================== */
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-left: 6px solid #0A207B;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card a,
+.card button,
+.card .toggle {
+  margin-top: auto;
+}
+
+.card img {
+  margin-bottom: 15px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.panel-dark {
+  background-color: #e3edff;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 6px solid #0A207B;
+  width: 80%;
+  text-align: center;
+  margin: 30px auto;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.panel-dark h2 {
+  font-size: 2rem;
+}
+
+.card-accent {
+  background-color: #E6F0FF;
+  border-left: 6px solid #0A207B;
+  padding: 20px;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+/* =====================================================
+   7. IMÁGENES Y CONTENEDORES VISUALES
+===================================================== */
+.imagenes-apoyo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 30px auto;
+}
+
+.imagenes-apoyo img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.imagenes-apoyo img:hover {
+  transform: scale(1.03);
+}
+
+/* Fotos del liceo - Grid de 3 columnas */
+.fotos-liceo {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  align-items: center;
+}
+
+.fotos-liceo img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.fotos-liceo img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.foto-descripcion {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.foto-descripcion p,
+.foto-descripcion h3 {
+  margin: 0;
+}
+
+/* Herramientas */
+.herramientas {
+  text-align: center;
+  padding: 0;
+}
+
+.herramientas h2 {
+  margin-bottom: 40px;
+  color: #0d2c7d;
+}
+
+.grid-herramientas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.item {
+  padding: 15px;
+}
+
+.item img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.item figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.item strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* =====================================================
+   8. TABS Y CONTENEDORES
+===================================================== */
+.tabs-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: transparent;
+}
+
+/* Menú lateral */
+.tabs-menu {
+  width: 250px;
+  background: #003b91;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tab-button {
+  background: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab-button:hover {
+  background: #4da3ff;
+  color: white;
+  transform: scale(1.05);
+}
+
+.tab-button.active {
+  background: #002150;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Cards section */
+.cards-container {
+  flex: 1;
+}
+
+.cards-section {
+  display: grid;
+  gap: 25px;
+  animation: fadeIn 0.4s ease;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+}
+
+/* =====================================================
+   9. BOTONES Y DETALLES (ACCORDION)
+===================================================== */
+details summary {
+  background: #003b91;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  margin-top: 10px;
+}
+
+details summary:hover {
+  transform: scale(1.05);
+}
+
+details[open] summary {
+  border-radius: 8px 8px 0 0;
+}
+
+details p {
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  animation: slideDown 0.4s ease;
+}
+
+/* Paso a paso */
+.paso {
+  margin-bottom: 10px;
+}
+
+.paso:first-of-type {
+  margin-top: 10px;
+}
+
+.paso summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 6px 0;
+  list-style: none;
+}
+
+.paso summary::-webkit-details-marker {
+  display: none;
+}
+
+.paso summary::after {
+  content: " ▼";
+  font-size: 0.8rem;
+}
+
+.paso[open] summary::after {
+  content: " ▲";
+}
+
+.paso p {
+  margin-top: 6px;
+  animation: slideDown 0.3s ease;
+}
+
+/* =====================================================
+   10. ANIMACIONES
+===================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =====================================================
+   11. COMPONENTES INTERACTIVOS
+===================================================== */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease;
+}
+
+.accordion-content.active {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.toggle {
+  background-color: #0A207B;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.guia {
+  display: none;
+  margin-top: 15px;
+  text-align: left;
+  background-color: #acbfff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* =====================================================
+   12. BUSCADOR GLOSARIO
+===================================================== */
+.buscador-glosario {
+  text-align: center;
+  margin: 30px auto;
+}
+
+#searchInput {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid #0A207B;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+#searchInput:focus {
+  box-shadow: 0 0 8px rgba(10,32,123,0.3);
+}
+
+.buscador-glosario button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0A207B;
+  color: white;
+  cursor: pointer;
+}
+
+.buscador-glosario button:hover {
+  background-color: #3B82F6;
+}
+
+#contadorResultados {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0A207B;
+}
+
+.resaltado {
+  background-color: yellow;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+mark{
+  background:#ffe066;
+  padding:2px 4px;
+  border-radius:4px;
+}
+
+/* =====================================================
+   13. GLOSARIO (CONTENEDORES)
+===================================================== */
+.contenedor-glosario {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.seccion {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.3s ease;
+  border-left: 6px solid #0A207B;
+}
+
+.seccion summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 6px 0;
+  list-style: none;
+}
+
+.seccion summary::-webkit-details-marker {
+  display: none;
+}
+
+.seccion p,
+.seccion ul {
+  margin-top: 8px;
+  animation: slideDown 0.3s ease;
+}
+
+.seccion li {
+  margin-bottom: 6px;
+  margin-left: 20px;
+}
+
+/* =========================================
+   ACORDEONES DEL GLOSARIO
+========================================= */
+
+.seccion {
+  background: #ffffff;
+  border-left: 6px solid #0A207B;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px var(--card-shadow);
+  overflow: hidden;
+}
+
+.seccion summary {
+  cursor: pointer;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #0A207B;
+  color: white;
+  list-style: none;
+}
+
+/* términos */
+
+.termino {
+  border-top: 1px solid #ddd;
+}
+
+.termino summary {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #f5f7ff;
+  color: #0A207B;
+  cursor: pointer;
+}
+
+.dark-mode .termino summary {
+  background: #2a2a3a;
+  color: #ffffff;
+}
+
+.definicion {
+  padding: 12px 20px 15px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   14. CRÉDITOS
+===================================================== */
+.credits-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.credit-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, background 0.3s ease;
+}
+
+.contact a {
+  color: var(--contact-link);
+  font-weight: 600;
+}
+
+.contact a:hover {
+  color: #3B82F6;
+}
+
+.credit-card:hover {
+  transform: translateY(-5px);
+}
+
+.photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 18px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.photo.jose { background-image: url('../media/jose.png'); background-position: 12% 50%; }
+.photo.sarha { background-image: url('../media/sarha.png'); background-position: 50% 50%; }
+.photo.gian { background-image: url('../media/gian.png'); background-position: 88% 50%; }
+
+.name {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 8px 0 6px;
+  color: #0A207B;
+}
+
+.contact {
+  font-size: 0.95rem;
+  color: #000000;
+  margin: 6px 0;
+}
+
+.quote {
+  font-size: 0.92rem;
+  color: #000000;
+  margin-top: 12px;
+  line-height: 1.5;
+  border-top: 1px dashed rgba(0,0,0,0.2);
+  padding-top: 12px;
+}
+
+/* =====================================================
+   15. PIE DE PÁGINA
+===================================================== */
+.footer-institucional {
+  background-color: #0A207B;
+  color: var(--footer-text);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-legal {
+  background-color: #0A207B;
+  color: var(--footer-text);
+  font-weight: normal;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.footer-referencias {
+  background-color: #142a8f;
+  font-weight: normal;
+  color: var(--footer-text);
+  padding: 30px 40px;
+  font-size: 0.9rem;
+}
+
+/* =====================================================
+   16. ESTILOS MODO OSCURO ESPECÍFICOS
+===================================================== */
+body.dark-mode header,
+body.dark-mode .encabezado-dual {
+  background-color: #142a8f;
+  color: #ffffff;
+}
+
+body.dark-mode nav {
+  background-color: #161b22;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+body.dark-mode nav ul li a {
+  color: #c9d1d9;
+}
+
+body.dark-mode nav ul li a:hover {
+  color: #3b82f6;
+}
+
+body.dark-mode section {
+  color: #f5f7fa;
+}
+
+body.dark-mode .intro-section {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+body.dark-mode .intro-section h2 {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+body.dark-mode .intro-section p {
+  color: #f5f7fa;
+  text-align: center;
+}
+
+body.dark-mode .panel-dark h2 {
+  background-color: #1e1e1e;
+  color: #f5f7fa;
+  text-align: center;
+}
+
+body.dark-mode .dropdown-menu {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .card,
+body.dark-mode .card-accent,
+body.dark-mode .seccion {
+  background-color: #161b22;
+  color: #f5f7fa;
+  border-left: 6px solid #3b82f6;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .seccion h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+body.dark-mode .panel-dark {
+  background-color: #1e1e1e;
+  border-left: 6px solid #3b82f6;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+body.dark-mode #searchInput {
+  background-color: #0e1117;
+  color: #ffffff;
+  border: 2px solid #3b82f6;
+}
+
+body.dark-mode .buscador-glosario button {
+  background-color: #3b82f6;
+}
+
+body.dark-mode .buscador-glosario button:hover {
+  background-color: #2563eb;
+}
+
+body.dark-mode .resaltado {
+  background-color: #ffd60a;
+  color: #000;
+}
+
+/* Tarjetas de información en modo oscuro */
+body.dark-mode .info-card {
+  background: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  border-left: 4px solid #3b82f6;
+}
+
+body.dark-mode .info-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  border-left: 4px solid #4a8cff;
+}
+
+body.dark-mode .info-card h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .info-card p {
+  color: #e0e0e0;
+}
+
+/* Tarjetas de crédito en modo oscuro */
+body.dark-mode .credit-card {
+  background: #1e1e1e;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+body.dark-mode .name {
+  color: #ffffff;
+}
+
+body.dark-mode .contact {
+  color: #b0b0b0;
+}
+
+body.dark-mode .quote {
+  color: #e0e0e0;
+  border-top: 1px dashed rgba(255,255,255,0.1);
+}
+
+/* =====================================================
+   17. MEDIA QUERIES (RESPONSIVE)
+===================================================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1000px) {
+  .cards-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tabs-container {
+    flex-direction: column;
+  }
+
+  .tabs-menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .encabezado-dual {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .footer-institucional {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenedor-glosario {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .credits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .contenedores-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .info-card {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .intro-video {
+    padding: 0 15px;
+  }
+
+  .intro-video iframe,
+  .intro-video video {
+    width: 100%;
+    height: auto;
+  }
+
+  .tipos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotos-liceo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 600px) {
+  .contenedor-glosario {
+    grid-template-columns: 1fr;
+  }
+
+  .credits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .cards-section {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .fotos-liceo {
+    grid-template-columns: 1fr;
+  }
+
+  .fotos-liceo img {
+    height: 200px;
+  }
+}
