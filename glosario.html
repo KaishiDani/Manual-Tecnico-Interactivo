@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>
+if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark-mode");
+}
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario - Manual Técnico Interactivo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<script src="js/theme.js"></script>
+<body>
+
+<div id="header"></div>
+
+<section class="intro-section">
+  <div class="buscador-glosario">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Buscar término..."
+      onkeyup="filtrarGlosario()"
+    >
+    <button onclick="limpiarBusqueda()">Limpiar</button>
+    <p id="contadorResultados"></p>
+  </div>
+
+  <h2>Glosario de Términos</h2>
+  <p>Este glosario reúne términos esenciales relacionados con el mantenimiento preventivo, correctivo y el funcionamiento general de computadoras y software.</p>
+</section>
+
+<section class="contenedor-glosario">
+
+<!-- A -->
+<details class="seccion">
+<summary>A</summary>
+
+<details class="termino">
+<summary>Actualización</summary>
+<p class="definicion">Proceso de instalar versiones más recientes de software o controladores.</p>
+</details>
+
+<details class="termino">
+<summary>Antivirus</summary>
+<p class="definicion">Software diseñado para detectar y eliminar malware.</p>
+</details>
+
+<details class="termino">
+<summary>Almacenamiento</summary>
+<p class="definicion">Medio donde se guardan datos de forma permanente.</p>
+</details>
+
+<details class="termino">
+<summary>API</summary>
+<p class="definicion">Conjunto de funciones que permite la comunicación entre aplicaciones.</p>
+</details>
+
+<details class="termino">
+<summary>Advertencia del Sistema</summary>
+<p class="definicion">Notificación sobre fallas o riesgos en el equipo.</p>
+</details>
+
+</details>
+
+
+<!-- B -->
+<details class="seccion">
+<summary>B</summary>
+
+<details class="termino">
+<summary>Backup</summary>
+<p class="definicion">Copia de seguridad de datos importantes.</p>
+</details>
+
+<details class="termino">
+<summary>BIOS</summary>
+<p class="definicion">Sistema básico de entrada y salida encargado del arranque inicial del equipo.</p>
+</details>
+
+<details class="termino">
+<summary>BSOD</summary>
+<p class="definicion">“Blue Screen of Death”, error crítico del sistema operativo Windows.</p>
+</details>
+
+<details class="termino">
+<summary>Bug</summary>
+<p class="definicion">Error o falla en el software.</p>
+</details>
+
+<details class="termino">
+<summary>Bandwidth</summary>
+<p class="definicion">Cantidad de datos que pueden transferirse por segundo en una red.</p>
+</details>
+
+</details>
+
+
+<!-- C -->
+<details class="seccion">
+<summary>C</summary>
+
+<details class="termino">
+<summary>Cache</summary>
+<p class="definicion">Memoria rápida utilizada para acelerar procesos.</p>
+</details>
+
+<details class="termino">
+<summary>Comando</summary>
+<p class="definicion">Instrucción que ejecuta una acción en el sistema.</p>
+</details>
+
+<details class="termino">
+<summary>Controlador (Driver)</summary>
+<p class="definicion">Software que permite la comunicación entre hardware y sistema operativo.</p>
+</details>
+
+<details class="termino">
+<summary>CPU Usage</summary>
+<p class="definicion">Porcentaje de uso del procesador.</p>
+</details>
+
+<details class="termino">
+<summary>Checksum</summary>
+<p class="definicion">Método para verificar la integridad de archivos.</p>
+</details>
+
+</details>
+
+
+<!-- D -->
+<details class="seccion">
+<summary>D</summary>
+
+<details class="termino">
+<summary>Diagnóstico</summary>
+<p class="definicion">Proceso de identificar fallas en el equipo.</p>
+</details>
+
+<details class="termino">
+<summary>Defragmentación</summary>
+<p class="definicion">Organización de archivos en el disco para mejorar el rendimiento.</p>
+</details>
+
+<details class="termino">
+<summary>DNS</summary>
+<p class="definicion">Sistema que traduce nombres de dominio a direcciones IP.</p>
+</details>
+
+<details class="termino">
+<summary>Dashboard</summary>
+<p class="definicion">Panel visual de control de aplicaciones.</p>
+</details>
+
+<details class="termino">
+<summary>Debugging</summary>
+<p class="definicion">Proceso de depuración de errores en el software.</p>
+</details>
+
+</details>
+
+
+<!-- E -->
+<details class="seccion">
+<summary>E</summary>
+
+<details class="termino">
+<summary>Error Crítico</summary>
+<p class="definicion">Fallo grave que interrumpe el funcionamiento del sistema.</p>
+</details>
+
+<details class="termino">
+<summary>Especificaciones</summary>
+<p class="definicion">Características técnicas del equipo o software.</p>
+</details>
+
+<details class="termino">
+<summary>Extensión</summary>
+<p class="definicion">Sufijo que indica el tipo de archivo.</p>
+</details>
+
+<details class="termino">
+<summary>Encriptación</summary>
+<p class="definicion">Proceso de proteger datos mediante codificación.</p>
+</details>
+
+<details class="termino">
+<summary>Estabilidad</summary>
+<p class="definicion">Grado de buen funcionamiento continuo del sistema.</p>
+</details>
+
+</details>
+
+<!-- F -->
+<details class="seccion">
+<summary>F</summary>
+
+<details class="termino">
+<summary>Firmware</summary>
+<p class="definicion">Software integrado directamente en el hardware de un dispositivo.</p>
+</details>
+
+<details class="termino">
+<summary>Firewall</summary>
+<p class="definicion">Sistema de seguridad que controla el tráfico de red.</p>
+</details>
+
+<details class="termino">
+<summary>Formato</summary>
+<p class="definicion">Proceso de borrar y preparar un disco para almacenar datos.</p>
+</details>
+
+<details class="termino">
+<summary>Frecuencia</summary>
+<p class="definicion">Velocidad a la que trabaja un procesador o memoria.</p>
+</details>
+
+<details class="termino">
+<summary>FTP</summary>
+<p class="definicion">Protocolo utilizado para transferir archivos entre computadoras.</p>
+</details>
+
+</details>
+
+
+<!-- G -->
+<details class="seccion">
+<summary>G</summary>
+
+<details class="termino">
+<summary>Gigabyte</summary>
+<p class="definicion">Unidad de almacenamiento equivalente a 1024 megabytes.</p>
+</details>
+
+<details class="termino">
+<summary>GPU</summary>
+<p class="definicion">Procesador especializado en gráficos.</p>
+</details>
+
+<details class="termino">
+<summary>Gateway</summary>
+<p class="definicion">Dispositivo que conecta diferentes redes.</p>
+</details>
+
+<details class="termino">
+<summary>Gestor de tareas</summary>
+<p class="definicion">Herramienta que permite ver procesos y uso de recursos del sistema.</p>
+</details>
+
+<details class="termino">
+<summary>GUI</summary>
+<p class="definicion">Interfaz gráfica de usuario que permite interactuar visualmente con el sistema.</p>
+</details>
+
+</details>
+
+
+<!-- H -->
+<details class="seccion">
+<summary>H</summary>
+
+<details class="termino">
+<summary>Hardware</summary>
+<p class="definicion">Componentes físicos de un sistema informático.</p>
+</details>
+
+<details class="termino">
+<summary>HDD</summary>
+<p class="definicion">Disco duro mecánico utilizado para almacenamiento.</p>
+</details>
+
+<details class="termino">
+<summary>Hosting</summary>
+<p class="definicion">Servicio que permite alojar sitios web en servidores.</p>
+</details>
+
+<details class="termino">
+<summary>HTTP</summary>
+<p class="definicion">Protocolo utilizado para transferir páginas web.</p>
+</details>
+
+<details class="termino">
+<summary>HTTPS</summary>
+<p class="definicion">Versión segura del protocolo HTTP con cifrado.</p>
+</details>
+
+</details>
+
+
+<!-- I -->
+<details class="seccion">
+<summary>I</summary>
+
+<details class="termino">
+<summary>IP</summary>
+<p class="definicion">Dirección numérica que identifica un dispositivo en una red.</p>
+</details>
+
+<details class="termino">
+<summary>Interfaz</summary>
+<p class="definicion">Medio mediante el cual el usuario interactúa con un sistema.</p>
+</details>
+
+<details class="termino">
+<summary>Instalación</summary>
+<p class="definicion">Proceso de agregar software al sistema.</p>
+</details>
+
+<details class="termino">
+<summary>Indexación</summary>
+<p class="definicion">Proceso que permite localizar archivos más rápidamente.</p>
+</details>
+
+<details class="termino">
+<summary>Integridad de datos</summary>
+<p class="definicion">Garantía de que los datos no han sido alterados.</p>
+</details>
+
+</details>
+
+
+<!-- J -->
+<details class="seccion">
+<summary>J</summary>
+
+<details class="termino">
+<summary>Java</summary>
+<p class="definicion">Lenguaje de programación utilizado en múltiples plataformas.</p>
+</details>
+
+<details class="termino">
+<summary>JavaScript</summary>
+<p class="definicion">Lenguaje utilizado para agregar interactividad a sitios web.</p>
+</details>
+
+<details class="termino">
+<summary>JSON</summary>
+<p class="definicion">Formato de intercambio de datos ligero y fácil de leer.</p>
+</details>
+
+</details>
+
+<!-- K -->
+<details class="seccion">
+<summary>K</summary>
+
+<details class="termino">
+<summary>Kilobyte</summary>
+<p class="definicion">Unidad de almacenamiento equivalente a 1024 bytes.</p>
+</details>
+
+<details class="termino">
+<summary>Kernel</summary>
+<p class="definicion">Núcleo del sistema operativo que controla el hardware.</p>
+</details>
+
+</details>
+
+
+<!-- L -->
+<details class="seccion">
+<summary>L</summary>
+
+<details class="termino">
+<summary>LAN</summary>
+<p class="definicion">Red local que conecta dispositivos en un área limitada.</p>
+</details>
+
+<details class="termino">
+<summary>Latencia</summary>
+<p class="definicion">Tiempo que tarda un dato en viajar de un punto a otro.</p>
+</details>
+
+<details class="termino">
+<summary>Linux</summary>
+<p class="definicion">Sistema operativo de código abierto.</p>
+</details>
+
+<details class="termino">
+<summary>Log</summary>
+<p class="definicion">Registro de eventos del sistema.</p>
+</details>
+
+</details>
+
+
+<!-- M -->
+<details class="seccion">
+<summary>M</summary>
+
+<details class="termino">
+<summary>Malware</summary>
+<p class="definicion">Software malicioso diseñado para dañar o robar información.</p>
+</details>
+
+<details class="termino">
+<summary>Memoria RAM</summary>
+<p class="definicion">Memoria temporal utilizada por el sistema para ejecutar procesos.</p>
+</details>
+
+<details class="termino">
+<summary>Monitorización</summary>
+<p class="definicion">Seguimiento del estado y rendimiento de sistemas.</p>
+</details>
+
+<details class="termino">
+<summary>Multitarea</summary>
+<p class="definicion">Capacidad del sistema para ejecutar varios procesos simultáneamente.</p>
+</details>
+
+</details>
+
+
+<!-- N -->
+<details class="seccion">
+<summary>N</summary>
+
+<details class="termino">
+<summary>Navegador</summary>
+<p class="definicion">Software que permite acceder a páginas web.</p>
+</details>
+
+<details class="termino">
+<summary>Nodo</summary>
+<p class="definicion">Punto de conexión dentro de una red.</p>
+</details>
+
+<details class="termino">
+<summary>Nube</summary>
+<p class="definicion">Almacenamiento y servicios accesibles a través de internet.</p>
+</details>
+
+</details>
+
+
+<!-- O -->
+<details class="seccion">
+<summary>O</summary>
+
+<details class="termino">
+<summary>Open Source</summary>
+<p class="definicion">Software cuyo código fuente es público.</p>
+</details>
+
+<details class="termino">
+<summary>Optimización</summary>
+<p class="definicion">Proceso de mejorar el rendimiento del sistema.</p>
+</details>
+
+<details class="termino">
+<summary>Overclocking</summary>
+<p class="definicion">Aumento de la velocidad del hardware más allá de sus especificaciones.</p>
+</details>
+
+</details>
+
+<!-- P -->
+<details class="seccion">
+<summary>P</summary>
+
+<details class="termino">
+<summary>Ping</summary>
+<p class="definicion">Herramienta para comprobar conectividad en red.</p>
+</details>
+
+<details class="termino">
+<summary>Plugin</summary>
+<p class="definicion">Extensión que agrega funciones a un programa.</p>
+</details>
+
+<details class="termino">
+<summary>Protocolo</summary>
+<p class="definicion">Conjunto de reglas para la comunicación entre dispositivos.</p>
+</details>
+
+</details>
+
+
+<!-- Q -->
+<details class="seccion">
+<summary>Q</summary>
+
+<details class="termino">
+<summary>Query</summary>
+<p class="definicion">Consulta realizada a una base de datos.</p>
+</details>
+
+</details>
+
+
+<!-- R -->
+<details class="seccion">
+<summary>R</summary>
+
+<details class="termino">
+<summary>Red</summary>
+<p class="definicion">Conjunto de dispositivos conectados entre sí.</p>
+</details>
+
+<details class="termino">
+<summary>Router</summary>
+<p class="definicion">Dispositivo que dirige el tráfico entre redes.</p>
+</details>
+
+<details class="termino">
+<summary>Resolución</summary>
+<p class="definicion">Cantidad de píxeles que muestra una pantalla.</p>
+</details>
+
+</details>
+
+
+<!-- S -->
+<details class="seccion">
+<summary>S</summary>
+
+<details class="termino">
+<summary>Servidor</summary>
+<p class="definicion">Equipo que proporciona recursos a otros dispositivos.</p>
+</details>
+
+<details class="termino">
+<summary>Software</summary>
+<p class="definicion">Programas y aplicaciones de un sistema.</p>
+</details>
+
+<details class="termino">
+<summary>SSD</summary>
+<p class="definicion">Unidad de almacenamiento rápida sin partes mecánicas.</p>
+</details>
+
+</details>
+
+
+<!-- T -->
+<details class="seccion">
+<summary>T</summary>
+
+<details class="termino">
+<summary>TCP/IP</summary>
+<p class="definicion">Conjunto de protocolos utilizados en internet.</p>
+</details>
+
+<details class="termino">
+<summary>Terminal</summary>
+<p class="definicion">Interfaz de línea de comandos.</p>
+</details>
+
+<details class="termino">
+<summary>Token</summary>
+<p class="definicion">Elemento de seguridad utilizado para autenticación.</p>
+</details>
+
+</details>
+
+
+<!-- U -->
+<details class="seccion">
+<summary>U</summary>
+
+<details class="termino">
+<summary>USB</summary>
+<p class="definicion">Puerto utilizado para conectar dispositivos.</p>
+</details>
+
+<details class="termino">
+<summary>Usuario</summary>
+<p class="definicion">Persona que utiliza un sistema informático.</p>
+</details>
+
+</details>
+
+
+<!-- V -->
+<details class="seccion">
+<summary>V</summary>
+
+<details class="termino">
+<summary>VPN</summary>
+<p class="definicion">Red privada virtual que protege la conexión.</p>
+</details>
+
+<details class="termino">
+<summary>Virtualización</summary>
+<p class="definicion">Creación de entornos virtuales dentro de un sistema físico.</p>
+</details>
+
+</details>
+
+
+<!-- W -->
+<details class="seccion">
+<summary>W</summary>
+
+<details class="termino">
+<summary>Wi-Fi</summary>
+<p class="definicion">Tecnología de conexión inalámbrica a internet.</p>
+</details>
+
+<details class="termino">
+<summary>WAN</summary>
+<p class="definicion">Red que cubre áreas geográficas grandes.</p>
+</details>
+
+</details>
+
+
+<!-- X -->
+<details class="seccion">
+<summary>X</summary>
+
+<details class="termino">
+<summary>XML</summary>
+<p class="definicion">Lenguaje utilizado para estructurar datos.</p>
+</details>
+
+</details>
+
+
+<!-- Y -->
+<details class="seccion">
+<summary>Y</summary>
+
+<details class="termino">
+<summary>Yottabyte</summary>
+<p class="definicion">Unidad de almacenamiento extremadamente grande equivalente a 10²⁴ bytes.</p>
+</details>
+
+</details>
+
+
+<!-- Z -->
+<details class="seccion">
+<summary>Z</summary>
+
+<details class="termino">
+<summary>Zip</summary>
+<p class="definicion">Formato de compresión de archivos.</p>
+</details>
+
+<details class="termino">
+<summary>Zona horaria</summary>
+<p class="definicion">Configuración del sistema que define la hora según la región.</p>
+</details>
+
+</details>
+</section>
+
+<div id="footer"></div>
+
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+<script>
+  const input = document.getElementById("searchInput");
+const contador = document.getElementById("contadorResultados");
+
+function limpiarResaltado(elemento){
+  elemento.innerHTML = elemento.textContent;
+}
+
+function resaltar(elemento, texto){
+  if(!texto) return;
+
+  const regex = new RegExp(`(${texto})`, "gi");
+  elemento.innerHTML = elemento.textContent.replace(regex,"<mark>$1</mark>");
+}
+
+function filtrarGlosario(){
+
+  const filtro = input.value.toLowerCase().trim();
+  const secciones = document.querySelectorAll(".seccion");
+
+  let resultados = 0;
+  let primerResultado = null;
+
+  secciones.forEach(seccion => {
+
+    const terminos = seccion.querySelectorAll(".termino");
+    let coincidenciasSeccion = 0;
+
+    terminos.forEach(termino => {
+
+      const titulo = termino.querySelector("summary");
+      const definicion = termino.querySelector(".definicion");
+
+      limpiarResaltado(titulo);
+      limpiarResaltado(definicion);
+
+      const texto = (titulo.textContent + " " + definicion.textContent).toLowerCase();
+
+      if(filtro !== "" && texto.includes(filtro)){
+
+        termino.style.display = "";
+        termino.open = true;
+
+        resaltar(titulo,filtro);
+        resaltar(definicion,filtro);
+
+        coincidenciasSeccion++;
+        resultados++;
+
+        if(!primerResultado){
+          primerResultado = termino;
+        }
+
+      }else if(filtro !== ""){
+
+        termino.style.display = "none";
+        termino.open = false;
+
+      }else{
+
+        termino.style.display = "";
+        termino.open = false;
+
+      }
+
+    });
+
+    if(filtro !== ""){
+      seccion.style.display = coincidenciasSeccion > 0 ? "" : "none";
+      seccion.open = coincidenciasSeccion > 0;
+    }else{
+      seccion.style.display = "";
+      seccion.open = false;
+    }
+
+  });
+
+  contador.textContent = filtro === "" ? "" : resultados + " resultado(s)";
+
+  if(primerResultado){
+    primerResultado.scrollIntoView({
+      behavior:"smooth",
+      block:"center"
+    });
+  }
+
+}
+
+function limpiarBusqueda(){
+
+  input.value = "";
+
+  const terminos = document.querySelectorAll(".termino");
+  const secciones = document.querySelectorAll(".seccion");
+
+  terminos.forEach(t=>{
+
+    t.style.display = "";
+    t.open = false;
+
+    const titulo = t.querySelector("summary");
+    const definicion = t.querySelector(".definicion");
+
+    titulo.innerHTML = titulo.textContent;
+    definicion.innerHTML = definicion.textContent;
+
+  });
+
+  secciones.forEach(s=>{
+    s.style.display = "";
+    s.open = false;
+  });
+
+  contador.textContent = "";
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const acordeones = document.querySelectorAll(".termino");
+  acordeones.forEach(item => {
+    item.firstElementChild.addEventListener("click", () => {
+      acordeones.forEach(other => {
+        if(other !== item){
+          other.classList.remove("activo");
+          if(other.lastElementChild) other.lastElementChild.style.maxHeight = null;
+        }
+      });
+      item.classList.toggle("activo");
+      const contenido = item.lastElementChild;
+      if(contenido) contenido.style.maxHeight = item.classList.contains("activo") ? contenido.scrollHeight + "px" : null;
+    });
+  });
+});
+</script>
+
+</body>
+</html>

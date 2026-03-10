@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script>
+if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark-mode");
+}
+</script>
+<meta charset="UTF-8">
+<title>Capítulo II</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/theme.js"></script>
+<body>
+
+  <!-- Encabezado -->
+  <div id="header"></div>
+  
+ <section id=hardware class="intro-section">
+    <h2>Hardware</h2>
+    <p>El hardware se refiere al conjunto de componentes físicos que conforman un sistema informático. Incluye todas las partes tangibles que pueden verse y manipularse, como el procesador, la memoria, el disco duro, la placa madre, los periféricos y los dispositivos de almacenamiento.</p> 
+    <p>El hardware es responsable de ejecutar las instrucciones proporcionadas por el software, procesar datos y permitir la interacción del usuario con el sistema. Su correcto mantenimiento y funcionamiento son fundamentales para garantizar estabilidad, rendimiento y durabilidad del equipo.</p>
+  </section>
+  <section class="seccion">
+  <h2>Herramientas Necesarias</h2>
+  <section class="herramientas">
+
+  <div class="grid-herramientas">
+    <figure class="item">
+      <img src="media/destornillador.png" alt="Destornilladores de precisión">
+      <figcaption>
+        <strong>Destornilladores de precisión</strong>
+        <p>Permiten desmontar equipos sin dañar tornillos pequeños.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="item">
+      <img src="media/pinzas.png" alt="Pinzas antiestáticas">
+      <figcaption>
+        <strong>Pinzas antiestáticas</strong>
+        <p>Manipulan piezas delicadas evitando descargas eléctricas.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="item">
+      <img src="media/aire.png" alt="Aire comprimido">
+      <figcaption>
+        <strong>Aire comprimido</strong>
+        <p>Elimina polvo acumulado en zonas difíciles.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="item">
+      <img src="media/pasta.png" alt="Pasta térmica">
+      <figcaption>
+        <strong>Pasta térmica</strong>
+        <p>Mejora la transferencia de calor entre CPU y disipador.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="item">
+      <img src="media/multimetro.png" alt="Multímetro digital">
+      <figcaption>
+        <strong>Multímetro digital</strong>
+        <p>Mide voltaje, corriente y continuidad eléctrica.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="item">
+      <img src="media/guantes.png" alt="Guantes antiestáticos">
+      <figcaption>
+        <strong>Guantes antiestáticos</strong>
+        <p>Protegen los componentes y tus manos.</p>
+      </figcaption>
+    </figure>
+
+  </div>
+
+</section>
+</section>
+
+<section class="seccion">
+  <h2>¿Qué se debe tener en cuenta?</h2>
+  <ul>
+    <li>Desconectar el equipo antes de intervenirlo</li>
+    <li>Trabajar en una superficie limpia y libre de estática</li>
+    <li>Identificar correctamente los componentes antes de manipularlos</li>
+    <li>Verificar compatibilidad de piezas antes de reemplazar</li>
+    <li>Documentar los cambios realizados</li>
+  </p>
+</section>
+
+<section class="seccion">
+  <h2>¿Qué hacer y qué no?</h2>
+  <ul>
+    <li><strong>✔️ Hacer:</strong> Usar herramientas adecuadas, seguir procedimientos seguros, revisar conexiones.</li>
+    <li><strong>❌ No hacer:</strong> Forzar piezas, tocar circuitos sin protección, dejar cables sueltos.</li>
+    <li><strong>✔️ Hacer:</strong> Mantener limpieza interna del equipo regularmente.</li>
+    <li><strong>❌ No hacer:</strong> Usar líquidos corrosivos o abrasivos para limpiar componentes.</li>
+  </ul>
+</section>
+
+<section id=como class="intro-section">
+    <h2>¿Cómo hacerlo?</h2>
+    <p>A continuación, se presentan guías paso a paso para el mantenimiento de los principales componentes de hardware.</p>
+  </section>
+  
+<div class="tabs-container">
+    <div class="tabs-menu">
+        <button class="tab-button active" onclick="openTab('perifericos', this)">Periféricos</button>
+        <button class="tab-button" onclick="openTab('internos', this)">Componentes Internos</button>
+        <button class="tab-button" onclick="openTab('almacenamiento', this)">Almacenamiento y Estructura</button>
+    </div>
+
+    <div class="cards-container">
+
+        <div class="cards-section" id="perifericos">
+            <div class="card">
+                <img src="media/monitor.jpg">
+                <h4>Monitor</h4>
+                <p>Limpieza y verificación de conexiones</p>
+               <details>
+            <summary>Ver guía paso a paso</summary>
+
+                <details class="paso">
+                    <summary>1. Desconexión y seguridad</summary>
+                    <p>Apaga el monitor y desconéctalo de la corriente. Espera al menos 30 segundos antes de manipularlo.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>2. Limpieza de pantalla</summary>
+                    <p>Usa un paño de microfibra.</p>
+                    <p>Aplica limpiador especial para pantallas o alcohol isopropílico al 70%.</p>
+                    <p>No rocíes el líquido directamente sobre la pantalla.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>3. Limpieza de estructura</summary>
+                    <p>Pasa un paño ligeramente húmedo por la base, marco y parte trasera.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>4. Revisión de conexiones</summary>
+                    <p>Verifica cables VGA, HDMI o DisplayPort.</p>
+                    <p>Asegura que no estén doblados o rotos.</p>
+                    <p>Comprueba que la fuente de poder funcione correctamente.</p>
+                </details>
+            </div>
+
+            <div class="card">
+                <img src="media/teclado.jpg">
+                <h4>Teclado</h4>
+                <p>Limpieza profunda y verificación de funcionamiento</p>
+                <details>
+                <summary>Ver guía paso a paso</summary>
+
+                <details class="paso">
+                    <summary>1. Preparación</summary>
+                    <p>Desconecta el teclado y voltéalo suavemente para retirar el polvo suelto.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>2. Limpieza entre teclas</summary>
+                    <p>Usa aire comprimido para expulsar suciedad.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>3. Limpieza profunda</summary>
+                    <p>Con un hisopo y alcohol isopropílico limpia cada tecla individualmente.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>4. Revisión</summary>
+                    <p>Conecta el teclado y prueba cada tecla con un probador online para asegurarte de que responde correctamente.</p>
+                </details>
+            </div>
+
+            <div class="card">
+            <img src="media/mouse.jpg">
+            <h4>Mouse</h4>
+            <p>Limpieza externa, sensor y revisión de botones</p>
+
+            <details>
+                <summary>Ver guía paso a paso</summary>
+
+                <details class="paso">
+                    <summary>1. Limpieza externa</summary>
+                    <p>Pasa una toalla ligeramente humedecida por la superficie del mouse.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>2. Limpieza del sensor</summary>
+                    <p>Con un hisopo seco o aire comprimido, limpia el sensor inferior para evitar fallas de movimiento.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>3. Limpieza de la rueda</summary>
+                    <p>Mueve la rueda varias veces mientras soplas o aplicas aire comprimido.</p>
+                </details>
+
+                <details class="paso">
+                    <summary>4. Revisión de botones</summary>
+                    <p>Haz clic repetidamente para verificar que ninguno se quede pegado. En mouse USB, prueba en otra PC si no responde.</p>
+                </details>
+
+            </details>
+        </div>
+        </div>
+
+        <div class="cards-section" id="internos" style="display:none">
+            <!-- CPU -->
+<div class="card">
+    <img src="media/cpu.jpg" alt="CPU">
+    <h3>CPU (Procesador)</h3>
+    <p>Mantenimiento térmico y limpieza del disipador.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <details class="paso">
+            <summary>1. Apagado y desconexión</summary>
+            <p>Apaga y desconecta el equipo para evitar descargas eléctricas o daños a los componentes.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Retiro del disipador</summary>
+            <p>Desatornilla o libera los seguros para poder retirar el disipador.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Limpieza</summary>
+            <p>Usa alcohol isopropílico para limpiar la pasta térmica vieja.</p>
+            <p>Aplica con un paño o hisopo.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Aplicación de nueva pasta térmica</summary>
+            <p>Una gota del tamaño de un chícharo es suficiente.</p>
+        </details>
+
+        <details class="paso">
+            <summary>5. Recolocar disipador</summary>
+            <p>Aprieta uniformemente para asegurar el contacto.</p>
+        </details>
+    </details>
+</div>
+
+
+<!-- DISCO DURO -->
+<div class="card">
+    <img src="media/hdd.jpg" alt="Disco Duro">
+    <h3>Disco Duro (HDD)</h3>
+    <p>Verificación de sectores, vibraciones y estado SMART.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <details class="paso">
+            <summary>1. Retiro del disco duro</summary>
+            <p>Desatornilla suavemente y desconecta el cable SATA y el cable de energía.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Limpieza de conectores</summary>
+            <p>Usa aire comprimido para eliminar polvo acumulado.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Revisar posibles ruidos anormales</summary>
+            <p>Presta atención a golpeteos, chirridos o vibraciones excesivas.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Análisis del estado SMART</summary>
+            <p>Utiliza CrystalDiskInfo o software similar para verificar la salud del disco.</p>
+        </details>
+</div>
+
+
+<!-- PLACA MADRE -->
+<div class="card">
+    <img src="media/motherboard.jpg" alt="Placa Madre">
+    <h3>Placa Madre</h3>
+    <p>Limpieza profunda, inspección de capacitores y puertos.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <details class="paso">
+            <summary>1. Desconexión del cableado</summary>
+            <p>Incluye USB, audio frontal, SATA, ventiladores y energía.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Limpieza</summary>
+            <p>Realiza pasadas suaves sobre los componentes.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Revisión de capacitores</summary>
+            <p>Busca abultamientos, fugas u oxidación.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Verificación de ranuras y puertos</summary>
+            <p>Asegúrate de que no tengan polvo ni pines doblados.</p>
+        </details>
+</div>
+
+
+<!-- MEMORIA RAM -->
+<div class="card">
+    <img src="media/ram.jpg" alt="Memoria RAM">
+    <h3>Memoria RAM</h3>
+    <p>Limpieza de contactos y comprobación del módulo.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <details class="paso">
+            <summary>1. Retiro de los módulos</summary>
+            <p>Presiona las pestañas laterales hasta que los módulos se liberen.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Limpieza de contactos</summary>
+            <p>Usa una goma blanca suave sobre los contactos dorados.</p>
+            <p>Evita tocarlos directamente con las manos.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Limpieza de ranuras</summary>
+            <p>Utiliza aire comprimido únicamente para eliminar polvo.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Reinstalar módulos</summary>
+            <p>Inserta correctamente hasta escuchar el clic de fijación.</p>
+        </details>
+</div>
+
+
+<!-- FUENTE DE PODER -->
+<div class="card">
+    <img src="media/psu.jpg" alt="Fuente de Poder">
+    <h3>Fuente de Poder (PSU)</h3>
+    <p>Revisión de voltajes, limpieza y verificación de cables.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <details class="paso">
+            <summary>1. Desconectar el equipo</summary>
+            <p>Una PSU puede mantener voltaje residual incluso apagada, así que debe el equipo desconectarse por completo.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Limpieza del ventilador</summary>
+            <p>Usa aire comprimido desde el exterior sin abrir la fuente.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Verificación de cables y conectores</summary>
+            <p>Revisa ATX 24 pines, CPU 4/8 pines, PCIe y SATA.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Inspección de olores o manchas</summary>
+            <p>Cualquier olor a quemado o marca interna indica reemplazo inmediato.</p>
+        </details>
+</div>
+
+
+<!-- CONECTORES -->
+<div class="card">
+    <img src="media/pci.jpg" alt="Conectores">
+    <h3>Conectores</h3>
+    <p>Limpieza y verificación de puertos internos y externos.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <details class="paso">
+            <summary>1. Limpieza de conectores externos</summary>
+            <p>Incluye USB, audio, Ethernet, HDMI y VGA.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Limpieza de conectores internos</summary>
+            <p>Incluye SATA, PCIe y conectores de ventiladores.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Revisar spines y contactos</summary>
+            <p>Verifica que no existan pines doblados o dañados.</p>
+        </details>
+</div>
+
+        </div>
+
+        <div class="cards-section" id="almacenamiento" style="display:none">
+           <!-- GABINETE -->
+<div class="card">
+    <img src="media/case.jpg" alt="Gabinete">
+    <h3>Gabinete (Case)</h3>
+    <p>Limpieza interna, ventilación y organización de cables.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <details class="paso">
+            <summary>1. Retirar paneles laterales</summary>
+            <p>Afloja los tornillos y desliza los paneles con cuidado.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Limpieza interna</summary>
+            <p>Usa aire comprimido para eliminar polvo acumulado.</p>
+            <p>Mantén el bote en posición vertical durante el proceso.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Limpieza</summary>
+            <p>Utiliza un pincel suave y aire comprimido para limpiar ventiladores y rejillas.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Revisión de filtros</summary>
+            <p>Retíralos si es posible y lávalos con agua. Asegúrate de que estén completamente secos antes de reinstalarlos.</p>
+        </details>
+
+        <details class="paso">
+            <summary>5. Organizar cableado</summary>
+            <p>Mejora el flujo de aire y evita obstrucciones en los ventiladores.</p>
+        </details>
+</div>
+
+
+<!-- UNIDAD OPTICA CD/DVD -->
+<div class="card">
+    <img src="media/cd.jpg" alt="Unidad CD/DVD">
+    <h3>Unidad de CD/DVD</h3>
+    <p>Limpieza del lente, bandeja y verificación de lectura.</p>
+
+    <details>
+        <summary>Ver guía paso a paso</summary>
+
+        <details class="paso">
+            <summary>1. Expulsión de la bandeja</summary>
+            <p>Utiliza el botón físico para evitar forzar el mecanismo.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Limpieza de la bandeja</summary>
+            <p>Pasa un paño ligeramente húmedo por toda la superficie.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Limpieza del lente</summary>
+            <p>Usa un disco limpiador o un hisopo con alcohol isopropílico.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Verificación</summary>
+            <p>La bandeja debe abrir y cerrar sin trabas ni ruidos anormales.</p>
+        </details>
+
+        <details class="paso">
+            <summary>5. Prueba de lectura</summary>
+            <p>Inserta un CD o DVD original para comprobar funcionamiento.</p>
+        </details>
+</div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+function openTab(tabName, button){
+    document.querySelectorAll('.cards-section').forEach(s=>s.style.display='none');
+    document.querySelector('#'+tabName).style.display='grid';
+
+    document.querySelectorAll('.tab-button').forEach(b=>b.classList.remove('active'));
+    button.classList.add('active');
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const pasos = document.querySelectorAll(".paso");
+
+    pasos.forEach((paso) => {
+        paso.addEventListener("toggle", function () {
+
+            if (this.open) {
+                pasos.forEach((otro) => {
+                    if (otro !== this) {
+                        otro.removeAttribute("open");
+                    }
+                });
+            }
+
+        });
+    });
+
+});
+</script>
+
+ <!-- Pie de página -->
+  <div id="footer"></div>
+  
+  <script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>

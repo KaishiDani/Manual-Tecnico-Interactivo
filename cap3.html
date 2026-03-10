@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>
+if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark-mode");
+}
+</script>
+<meta charset="UTF-8">
+<title>Capítulo III</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/theme.js"></script>
+<body>
+
+  <!-- Encabezado -->
+  <div id="header"></div>
+
+<section id="software" class="intro-section">
+  <h2>Software</h2>
+  <p>El software comprende el conjunto de programas, aplicaciones y sistemas que permiten que el hardware funcione correctamente. A través del software, el usuario puede interactuar con el equipo, ejecutar tareas, procesar información y administrar recursos del sistema.</p>
+  <p>En este capítulo aprenderás cómo instalar, configurar y mantener las herramientas esenciales para el funcionamiento del sistema. También se abordarán prácticas recomendadas para garantizar seguridad, estabilidad y rendimiento, evitando errores comunes que puedan afectar el desempeño del equipo.</p>
+</section>
+
+<section class="seccion">
+  <h2>Tipos de Software</h2>
+  <ul>
+    <li><strong>Software básico:</strong> Incluye el sistema operativo y programas esenciales que permiten el funcionamiento general del equipo. Sin este tipo de software, el hardware no podría operar correctamente.</li>
+    <li><strong>Software interno:</strong> Se refiere a los componentes del sistema operativo que no son visibles al usuario, pero son fundamentales para el funcionamiento del equipo.</li>
+    <li><strong>Software de gestión y almacenamiento:</strong> Incluye herramientas para administrar archivos, bases de datos y recursos del sistema.</li>
+  </ul>
+</section>
+
+<section class="seccion">
+  <h2>Recomendaciones Generales</h2>
+  <ul>
+    <li>Descargar software únicamente de fuentes confiables.</li>
+    <li>Mantener actualizaciones automáticas activadas.</li>
+    <li>Evitar instalar programas desconocidos.</li>
+    <li>Crear puntos de restauración antes de cambios grandes.</li>
+  </ul>
+</section>
+
+<section id="como2" class="intro-section">
+  <h2>¿Cómo hacerlo?</h2>
+  <p>A continuación se presentan guías paso a paso para el mantenimiento, instalación y configuración de los principales tipos de software.</p>
+</section>
+
+<div class="tabs-container">
+  <div class="tabs-menu">
+      <button class="tab-button active" onclick="openTab('softwareBasico', this)">Software Básico</button>
+      <button class="tab-button" onclick="openTab('sistemasInternos', this)">Sistemas Internos</button>
+      <button class="tab-button" onclick="openTab('gestion', this)">Gestión y Almacenamiento</button>
+  </div>
+
+  <div class="cards-container">
+
+    <div class="cards-section" id="softwareBasico">
+      <div class="card">
+        <img src="media/navegador.jpg">
+        <h3>Navegadores Web</h3>
+        <p>Revisión</p>
+        <details><summary>Ver guía paso a paso</summary>
+        <details class="paso">
+            <summary>1. Caché y cookies</summary>
+            <p>Elimina archivos temporales para mejorar el rendimiento.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Actualización</summary>
+            <p>Mantén siempre la versión más reciente para mayor seguridad y estabilidad.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Revisión de extensiones</summary>
+            <p>Desinstala extensiones innecesarias o sospechosas.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Seguridad</summary>
+            <p>Activa bloqueadores de ventanas emergentes y protección contra sitios peligrosos.</p>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="media/ofimatica.jpg">
+        <h3>Suite Ofimática</h3>
+        <p>Instalación y actualización</p>
+        <details><summary>Ver guía paso a paso</summary>
+        <details class="paso">
+            <summary>1. Instalación del software</summary>
+            <p>Descarga desde el sitio oficial o medio autorizado.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Activación del producto</summary>
+            <p>Introduce la licencia correspondiente o inicia sesión con la cuenta vinculada.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Configuración inicial</summary>
+            <p>Ajusta idioma, formato regional y opciones predeterminadas.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Actualización automática</summary>
+            <p>Activa las actualizaciones para mantener compatibilidad y seguridad.</p>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="media/antivirus.png">
+        <h3>Antivirus</h3>
+        <p>Instalación y prevención</p>
+        <details><summary>Ver guía paso a paso</summary>
+        <details class="paso">
+            <summary>1. Instalación del antivirus</summary>
+            <p>Descarga únicamente desde la página oficial del proveedor.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Actualización</summary>
+            <p>Asegúrate de que la base de datos de amenazas esté actualizada.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Protección</summary>
+            <p>Activa la supervisión constante del sistema.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Análisis completo</summary>
+            <p>Realiza un escaneo profundo para detectar posibles amenazas.</p>
+        </details>
+      </div>
+
+    </div>
+
+    <div class="cards-section" id="sistemasInternos" style="display:none">
+      <div class="card">
+        <img src="media/sistema.jpg">
+        <h3>Sistema Operativo</h3>
+        <p>Actualización y mantenimiento</p>
+        <details><summary>Ver guía paso a paso</summary>
+        <details class="paso">
+            <summary>1. Actualización del sistema</summary>
+            <p>Accede a Windows Update o al gestor correspondiente y verifica que no existan actualizaciones pendientes.</p>
+        </details>
+
+        <details class="paso">
+            <summary>2. Optimización del inicio</summary>
+            <p>Deshabilita programas innecesarios que se ejecutan al arrancar el sistema.</p>
+        </details>
+
+        <details class="paso">
+            <summary>3. Creación de puntos de restauración</summary>
+            <p>Genera un punto de restauración antes de realizar cambios importantes.</p>
+        </details>
+
+        <details class="paso">
+            <summary>4. Limpieza de archivos temporales</summary>
+            <p>Elimina archivos innecesarios para mejorar el rendimiento general.</p>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="media/drivers.jpg">
+        <h3>Controladores</h3>
+        <p>Instalación de drivers</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <details class="paso">
+            <summary>1. Identificar dispositivos</summary>
+            <p>Revisa los dispositivos instalados en el sistema.</p>
+          </details>
+          <details class="paso">
+            <summary>2. Descarga</summary>
+            <p>Descarga los drivers correctos desde el sitio oficial del fabricante.</p>
+          </details>
+          <details class="paso">
+            <summary>3. Reiniciar</summary>
+            <p>Reinicia el sistema para aplicar los nuevos controladores.</p>
+          </details>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="media/bios.jpg">
+        <h3>BIOS / UEFI</h3>
+        <p>Configuración básica</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <details class="paso">
+            <summary>1. Acceso</summary>
+            <p>Accede al menú de BIOS/UEFI al iniciar el sistema.</p>
+          </details>
+          <details class="paso">
+            <summary>2. Ajustes principales</summary>
+            <p>Configura ajustes como hora, fecha y dispositivos de inicio.</p>
+          </details>
+          <details class="paso">
+            <summary>3. Guardar cambios</summary>
+            <p>Guarda los cambios realizados antes de salir del BIOS/UEFI.</p>
+          </details>
+        </details>
+      </div>
+    </div>
+
+    <div class="cards-section" id="gestion" style="display:none">
+      <div class="card">
+        <img src="media/archivos.png">
+        <h3>Gestor de Archivos</h3>
+        <p>Organización del sistema</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <details class="paso">
+            <summary>1. Ordenar carpetas</summary>
+            <p>Organiza las carpetas del sistema de forma lógica y eficiente.</p>
+          </details>
+          <details class="paso">
+            <summary>2. Limpiar archivos</summary>
+            <p>Elimina archivos temporales que no son necesarios.</p>
+          </details>
+          <details class="paso">
+            <summary>3. Copias de seguridad</summary>
+            <p>Crea copias de seguridad regulares de los archivos importantes.</p>
+          </details>
+        </details>
+      </div>
+
+      <div class="card">
+        <img src="media/utilidades.jpg">
+        <h3>Utilidades de Sistema</h3>
+        <p>Diagnóstico y reparación</p>
+        <details><summary>Ver guía paso a paso</summary>
+          <details class="paso">
+            <summary>1. SFC</summary>
+            <p>Ejecuta el comando SFC para reparar archivos del sistema dañados.</p>
+          </details>
+          <details class="paso">
+            <summary>2. CHKDSK</summary>
+            <p>Ejecuta CHKDSK para verificar y reparar errores en el disco duro.</p>
+          </details>
+          <details class="paso">
+            <summary>3. Monitor de rendimiento</summary>
+            <p>Utiliza el monitor de rendimiento para identificar cuellos de botella.</p>
+          </details>
+        </details>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openTab(tabName, button){
+  document.querySelectorAll('.cards-section').forEach(s => s.style.display = 'none');
+  document.getElementById(tabName).style.display = 'grid';
+  document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+  button.classList.add('active');
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const pasos = document.querySelectorAll(".paso");
+
+    pasos.forEach((paso) => {
+        paso.addEventListener("toggle", function () {
+
+            if (this.open) {
+                pasos.forEach((otro) => {
+                    if (otro !== this) {
+                        otro.removeAttribute("open");
+                    }
+                });
+            }
+
+        });
+    });
+
+});
+</script>
+
+ <!-- Pie de página -->
+<div id="footer"></div>
+
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>
